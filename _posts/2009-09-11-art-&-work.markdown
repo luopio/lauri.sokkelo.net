@@ -1,0 +1,13 @@
+---
+layout: post
+title:  "Art & Work"
+date:   2009-09-11 01:32:20 
+categories: graphics coding méxico 
+---
+Did my first [Openframeworks](http://www.openframeworks.cc) sketch to show something during a 20min speech in Spanish that I gave about Medialab and TaiK in general. Took me around one day to make it and it was fun. Performance is much better than with processing (have done a similar thing w/ it too) and coding in C++ isn't such a big pain.	
+
+I've also started working more and more on WELP - the Wellbeing Profile service that is based on the Koulun hyvinvointiprofiili -concept we built years ago. We're currently looking for funding, but the current lack of it won't stop the development process..
+
+Regarding México, I've taken salsa clases (just came back from one), continued other studies (art, history, politics and literature of Mexico ,and fotography). Today I'm off to a rock concert and next week is the 'puente' (=bridge=free days from school) due to the Méxican día de la independencia. We're going to Oaxaca. Can't wait!
+
+![](/images/kassi/18f353b3525f3c7eec85c35af8b7a9d9.png)

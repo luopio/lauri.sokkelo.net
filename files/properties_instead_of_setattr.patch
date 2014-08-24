@@ -1,0 +1,538 @@
+diff -cBr screenlets-0.0.7_orig/build/lib/screenlets/__init__.py screenlets-0.0.7/build/lib/screenlets/__init__.py
+*** screenlets-0.0.7_orig/build/lib/screenlets/__init__.py	2007-03-20 23:43:49.000000000 +0200
+--- screenlets-0.0.7/build/lib/screenlets/__init__.py	2007-03-20 23:54:27.000000000 +0200
+***************
+*** 27,35 ****
+  import pygtk
+  pygtk.require('2.0')
+  import gtk
+- import math
+  import cairo
+- from datetime import datetime
+  import gobject
+  import rsvg
+  import sys
+--- 27,33 ----
+***************
+*** 298,315 ****
+  	allow_option_override = True
+  	
+  	# editable options
+! 	x = 0
+! 	y = 0
+! 	width = 100
+! 	height = 100
+! 	scale = 1.0
+! 	theme_name = ""
+! 	is_sticky = False
+! 	is_widget = False
+! 	keep_above = True
+! 	keep_below = False
+! 	skip_pager = True
+! 	skip_taskbar = True
+  
+  	# some menuitems (needed for checking/unchecking)
+  	# DEPRECATED: remove - don't really work anyway ...
+--- 296,313 ----
+  	allow_option_override = True
+  	
+  	# editable options
+! 	__x = 0
+! 	__y = 0
+! 	__width = 100
+! 	__height = 100
+! 	__scale = 1.0
+! 	__theme_name = ""
+! 	__is_sticky = False
+! 	__is_widget = False
+! 	__keep_above = True
+! 	__keep_below = False
+! 	__skip_pager = True
+! 	__skip_taskbar = True
+  
+  	# some menuitems (needed for checking/unchecking)
+  	# DEPRECATED: remove - don't really work anyway ...
+***************
+*** 335,345 ****
+  		self.is_dragged = False
+  		self.__path__ = path
+  		# set some attributes without calling __setattr__
+! 		self.__dict__['theme_name'] = ""
+! 		self.__dict__['is_widget'] = is_widget
+! 		self.__dict__['is_sticky'] = is_sticky
+! 		self.__dict__['x'] = 0
+! 		self.__dict__['y'] = 0
+  		# TEST: set scale relative to theme size (NOT WORKING)
+  		#self.__dict__['scale'] = width/100.0
+  		# /TEST
+--- 333,343 ----
+  		self.is_dragged = False
+  		self.__path__ = path
+  		# set some attributes without calling __setattr__
+! 		self.__theme_name = ""
+! 		self.__is_widget = is_widget
+! 		self.__is_sticky = is_sticky
+! 		self.__x = 0
+! 		self.__y = 0
+  		# TEST: set scale relative to theme size (NOT WORKING)
+  		#self.__dict__['scale'] = width/100.0
+  		# /TEST
+***************
+*** 436,500 ****
+  		if show_window:
+  			self.window.show()
+  	
+! 	# override for setter-function (Python's version of get/set)
+! 	def __setattr__(self, name, value):
+! 		# set the value in object (ESSENTIAL!!!!)
+! 		object.__setattr__(self, name, value)
+! 		# And do other actions
+! 		if name=="x" or name=="y":
+! 			self.window.move(self.x, self.y)
+! 		elif name == 'scale':
+! 			self.window.resize(int(self.width * self.scale), 
+! 				int(self.height * self.scale))
+! 			# TODO: call on_resize-handler here !!!!
+! 			self.on_scale()
+! 			self.redraw_canvas()
+! 			self.update_shape()
+! 		elif name == "theme_name":
+! 			#self.__dict__ ['theme_name'] = value
+! 			self.load_theme(self.get_theme_dir() + value)
+! 			self.redraw_canvas()
+  			self.update_shape()
+! 		elif name in ("width", "height"):
+! 			#self.__dict__ [name] = value
+! 			if self.window:
+! 				self.window.resize(self.width, self.height)
+! 				#self.redraw_canvas()
+! 				self.update_shape()
+! 		elif name == "is_widget":
+! 			self.set_is_widget(value)
+! 		elif name == "is_sticky":
+! 			if value == True:
+! 				self.window.stick()
+! 			else:
+! 				self.window.unstick()
+! 		elif name == "keep_above":
+! 			self.window.set_keep_above(bool(value))
+! 			#self.__mi_keep_above.set_active(value)
+! 		elif name == "keep_below":
+! 			self.window.set_keep_below(bool(value))
+! 			#self.__mi_keep_below.set_active(value)
+! 		elif name == "skip_pager":
+! 			if self.window.window:
+! 				self.window.window.set_skip_pager_hint(bool(value))
+! 		elif name == "skip_taskbar":
+! 			if self.window.window:
+! 				self.window.window.set_skip_taskbar_hint(bool(value))
+  		# TEST: save settings to backend in real-time
+  		if self.__id:
+  			o = self.get_option_by_name(name)
+  			if o != None:
+  				# save single option to backend
+  				try:
+! 				    print "- trying to save", self.__id, " ", o.name, " ", o.on_export(value), "-"
+! 				    self.backend.save_option(self.__id, o.name, 
+! 						o.on_export(value))
+  				except:
+  					print "Unable to find backend! Option not saved."
+  					# disable backend
+  					self.__id = None
+  		# /TEST
+  	
+  	#-----------------------------------------------------------------------
+  	# TEST: new settings-backend over dbus-connection
+  	#-----------------------------------------------------------------------
+--- 434,555 ----
+  		if show_window:
+  			self.window.show()
+  	
+! 	
+! 	def __set_x(self, value):
+! 	    self.__x = value
+! 	    self.window.move(self.x, self.y)
+! 	    self.save_setting("x", self.__x)
+! 	
+! 	def __set_y(self, value):
+! 	    self.__y = value
+! 	    self.window.move(self.x, self.y)
+! 	    self.save_setting("y", self.__y)
+! 	    
+! 	def __set_scale(self, value):
+! 	    self.__scale = value
+! 	    self.window.resize( int(self.width * self.scale),
+! 	        int(self.height * self.scale) )
+! 	    # TODO: call on_resize-handler here !!!!
+! 	    self.on_scale()
+! 	    self.redraw_canvas()
+! 	    self.update_shape()
+! 	    self.save_setting("scale", self.__scale)
+! 	    
+! 	def __set_theme_name(self, value):
+! 	    self.__theme_name = value
+! 	    self.load_theme(self.get_theme_dir() + value)
+! 	    self.redraw_canvas()
+! 	    self.update_shape()
+! 	    self.save_setting("theme_name", self.__theme_name)
+! 	    
+! 	def __set_width(self, value):
+! 	    self.__width = value
+! 	    if self.window:
+! 			self.window.resize(self.width, self.height)
+! 			#self.redraw_canvas()
+  			self.update_shape()
+! 	    self.save_setting("width", self.__width)
+! 	    
+! 	def __set_height(self, value):
+! 	    self.__height = value
+! 	    if self.window:
+! 	        self.window.resize(self.width, self.height)
+! 	        self.update_shape()
+! 			#self.redraw_canvas()
+! 		self.save_setting("height", self.__height)
+! 			
+! 	def __set_is_widget(self, value):
+! 	    self.__is_widget = value
+! 	    self.set_is_widget(value)
+! 	    self.save_setting("is_widget", self.__is_widget)
+! 	    
+! 	def __set_is_sticky(self, value):
+! 	    self.__is_sticky = value
+! 	    if value:
+! 	        self.window.stick()
+! 	    else:
+! 		    self.window.unstick()
+! 	    self.save_setting("is_sticky", self.__is_sticky)
+! 	    
+! 	def __set_keep_above(self, value):
+! 	    self.__keep_above = value
+! 	    self.window.set_keep_above(bool(value))
+! 	    #self.__mi_keep_above.set_active(value)
+! 	    self.save_setting("keep_above", self.__keep_above)
+! 	    
+! 	def __set_keep_below(self, value):
+! 	    self.__keep_below = value
+! 	    self.window.set_keep_below(bool(value))
+! 	    #self.__mi_keep_above.set_active(value)   
+! 	    self.save_setting("keep_below", self.__keep_below)
+! 	    
+! 	def __set_skip_pager(self, value):
+! 	    self.__skip_pager = value
+! 	    if self.window.window:
+! 		    self.window.window.set_skip_pager_hint(bool(value))
+! 	    self.save_setting("skip_pager", self.__skip_pager)
+! 	    
+! 	def __set_skip_taskbar(self, value):
+! 	    self.__skip_taskbar = value
+! 	    if self.window.window:
+! 			self.window.window.set_skip_taskbar_hint(bool(value))
+! 	    self.save_setting("skip_taskbar", self.__skip_taskbar)
+! 			
+! 	def save_setting(self, name, value):	
+  		# TEST: save settings to backend in real-time
+  		if self.__id:
+  			o = self.get_option_by_name(name)
+  			if o != None:
+  				# save single option to backend
+  				try:
+! 				    self.backend.save_option(self.__id, o.name, o.on_export(value))
+  				except:
+  					print "Unable to find backend! Option not saved."
+  					# disable backend
+  					self.__id = None
+  		# /TEST
+  	
++ 	# All the properties of the Screenlet
++ 	x = property(lambda self: self.__x,  __set_x, None, "The X property of a Screenlet")
++ 	y = property(lambda self: self.__y,  __set_y, None, "The Y property of a Screenlet")
++ 	scale = property(lambda self: self.__scale,  __set_scale, None, "The scale property of a Screenlet")
++ 	theme_name = property(lambda self: self.__theme_name,  __set_theme_name, None, "The theme name of a Screenlet")
++ 	width = property(lambda self: self.__width,  __set_width, None, "The width of a Screenlet")
++ 	height = property(lambda self: self.__height,  __set_height, None, "The height of a Screenlet")
++ 	is_widget = property(lambda self: self.__is_widget,  __set_is_widget, 
++ 	            None, "Boolean to determine if the screenlet is a widget or not.")
++ 	is_sticky = property(lambda self: self.__is_sticky,  __set_is_sticky, 
++ 	            None, "Boolean to determine if the screenlet is a sticky or not.")
++ 	keep_above = property(lambda self: self.__keep_above,  __set_keep_above, 
++ 	            None, "Boolean to determine if the screenlet should appear above other windows.")
++ 	keep_below = property(lambda self: self.__keep_below,  __set_keep_below, 
++ 	            None, "Boolean to determine if the screenlet should appear below other windows.")
++ 	skip_pager = property(lambda self: self.__skip_pager,  __set_skip_pager, 
++ 	            None, "Boolean to determine if the screenlet should appear on the pager.")
++ 	skip_taskbar = property(lambda self: self.__skip_taskbar,  __set_skip_taskbar, 
++ 	            None, "Boolean to determine if the screenlet should appear on the taskbar.")
++ 	
++ 	
+  	#-----------------------------------------------------------------------
+  	# TEST: new settings-backend over dbus-connection
+  	#-----------------------------------------------------------------------
+diff -cBr screenlets-0.0.7_orig/src/lib/__init__.py screenlets-0.0.7/src/lib/__init__.py
+*** screenlets-0.0.7_orig/src/lib/__init__.py	2007-03-20 23:43:49.000000000 +0200
+--- screenlets-0.0.7/src/lib/__init__.py	2007-03-20 23:54:27.000000000 +0200
+***************
+*** 27,35 ****
+  import pygtk
+  pygtk.require('2.0')
+  import gtk
+- import math
+  import cairo
+- from datetime import datetime
+  import gobject
+  import rsvg
+  import sys
+--- 27,33 ----
+***************
+*** 298,315 ****
+  	allow_option_override = True
+  	
+  	# editable options
+! 	x = 0
+! 	y = 0
+! 	width = 100
+! 	height = 100
+! 	scale = 1.0
+! 	theme_name = ""
+! 	is_sticky = False
+! 	is_widget = False
+! 	keep_above = True
+! 	keep_below = False
+! 	skip_pager = True
+! 	skip_taskbar = True
+  
+  	# some menuitems (needed for checking/unchecking)
+  	# DEPRECATED: remove - don't really work anyway ...
+--- 296,313 ----
+  	allow_option_override = True
+  	
+  	# editable options
+! 	__x = 0
+! 	__y = 0
+! 	__width = 100
+! 	__height = 100
+! 	__scale = 1.0
+! 	__theme_name = ""
+! 	__is_sticky = False
+! 	__is_widget = False
+! 	__keep_above = True
+! 	__keep_below = False
+! 	__skip_pager = True
+! 	__skip_taskbar = True
+  
+  	# some menuitems (needed for checking/unchecking)
+  	# DEPRECATED: remove - don't really work anyway ...
+***************
+*** 335,345 ****
+  		self.is_dragged = False
+  		self.__path__ = path
+  		# set some attributes without calling __setattr__
+! 		self.__dict__['theme_name'] = ""
+! 		self.__dict__['is_widget'] = is_widget
+! 		self.__dict__['is_sticky'] = is_sticky
+! 		self.__dict__['x'] = 0
+! 		self.__dict__['y'] = 0
+  		# TEST: set scale relative to theme size (NOT WORKING)
+  		#self.__dict__['scale'] = width/100.0
+  		# /TEST
+--- 333,343 ----
+  		self.is_dragged = False
+  		self.__path__ = path
+  		# set some attributes without calling __setattr__
+! 		self.__theme_name = ""
+! 		self.__is_widget = is_widget
+! 		self.__is_sticky = is_sticky
+! 		self.__x = 0
+! 		self.__y = 0
+  		# TEST: set scale relative to theme size (NOT WORKING)
+  		#self.__dict__['scale'] = width/100.0
+  		# /TEST
+***************
+*** 436,500 ****
+  		if show_window:
+  			self.window.show()
+  	
+! 	# override for setter-function (Python's version of get/set)
+! 	def __setattr__(self, name, value):
+! 		# set the value in object (ESSENTIAL!!!!)
+! 		object.__setattr__(self, name, value)
+! 		# And do other actions
+! 		if name=="x" or name=="y":
+! 			self.window.move(self.x, self.y)
+! 		elif name == 'scale':
+! 			self.window.resize(int(self.width * self.scale), 
+! 				int(self.height * self.scale))
+! 			# TODO: call on_resize-handler here !!!!
+! 			self.on_scale()
+! 			self.redraw_canvas()
+! 			self.update_shape()
+! 		elif name == "theme_name":
+! 			#self.__dict__ ['theme_name'] = value
+! 			self.load_theme(self.get_theme_dir() + value)
+! 			self.redraw_canvas()
+  			self.update_shape()
+! 		elif name in ("width", "height"):
+! 			#self.__dict__ [name] = value
+! 			if self.window:
+! 				self.window.resize(self.width, self.height)
+! 				#self.redraw_canvas()
+! 				self.update_shape()
+! 		elif name == "is_widget":
+! 			self.set_is_widget(value)
+! 		elif name == "is_sticky":
+! 			if value == True:
+! 				self.window.stick()
+! 			else:
+! 				self.window.unstick()
+! 		elif name == "keep_above":
+! 			self.window.set_keep_above(bool(value))
+! 			#self.__mi_keep_above.set_active(value)
+! 		elif name == "keep_below":
+! 			self.window.set_keep_below(bool(value))
+! 			#self.__mi_keep_below.set_active(value)
+! 		elif name == "skip_pager":
+! 			if self.window.window:
+! 				self.window.window.set_skip_pager_hint(bool(value))
+! 		elif name == "skip_taskbar":
+! 			if self.window.window:
+! 				self.window.window.set_skip_taskbar_hint(bool(value))
+  		# TEST: save settings to backend in real-time
+  		if self.__id:
+  			o = self.get_option_by_name(name)
+  			if o != None:
+  				# save single option to backend
+  				try:
+! 				    print "- trying to save", self.__id, " ", o.name, " ", o.on_export(value), "-"
+! 				    self.backend.save_option(self.__id, o.name, 
+! 						o.on_export(value))
+  				except:
+  					print "Unable to find backend! Option not saved."
+  					# disable backend
+  					self.__id = None
+  		# /TEST
+  	
+  	#-----------------------------------------------------------------------
+  	# TEST: new settings-backend over dbus-connection
+  	#-----------------------------------------------------------------------
+--- 434,555 ----
+  		if show_window:
+  			self.window.show()
+  	
+! 	
+! 	def __set_x(self, value):
+! 	    self.__x = value
+! 	    self.window.move(self.x, self.y)
+! 	    self.save_setting("x", self.__x)
+! 	
+! 	def __set_y(self, value):
+! 	    self.__y = value
+! 	    self.window.move(self.x, self.y)
+! 	    self.save_setting("y", self.__y)
+! 	    
+! 	def __set_scale(self, value):
+! 	    self.__scale = value
+! 	    self.window.resize( int(self.width * self.scale),
+! 	        int(self.height * self.scale) )
+! 	    # TODO: call on_resize-handler here !!!!
+! 	    self.on_scale()
+! 	    self.redraw_canvas()
+! 	    self.update_shape()
+! 	    self.save_setting("scale", self.__scale)
+! 	    
+! 	def __set_theme_name(self, value):
+! 	    self.__theme_name = value
+! 	    self.load_theme(self.get_theme_dir() + value)
+! 	    self.redraw_canvas()
+! 	    self.update_shape()
+! 	    self.save_setting("theme_name", self.__theme_name)
+! 	    
+! 	def __set_width(self, value):
+! 	    self.__width = value
+! 	    if self.window:
+! 			self.window.resize(self.width, self.height)
+! 			#self.redraw_canvas()
+  			self.update_shape()
+! 	    self.save_setting("width", self.__width)
+! 	    
+! 	def __set_height(self, value):
+! 	    self.__height = value
+! 	    if self.window:
+! 	        self.window.resize(self.width, self.height)
+! 	        self.update_shape()
+! 			#self.redraw_canvas()
+! 		self.save_setting("height", self.__height)
+! 			
+! 	def __set_is_widget(self, value):
+! 	    self.__is_widget = value
+! 	    self.set_is_widget(value)
+! 	    self.save_setting("is_widget", self.__is_widget)
+! 	    
+! 	def __set_is_sticky(self, value):
+! 	    self.__is_sticky = value
+! 	    if value:
+! 	        self.window.stick()
+! 	    else:
+! 		    self.window.unstick()
+! 	    self.save_setting("is_sticky", self.__is_sticky)
+! 	    
+! 	def __set_keep_above(self, value):
+! 	    self.__keep_above = value
+! 	    self.window.set_keep_above(bool(value))
+! 	    #self.__mi_keep_above.set_active(value)
+! 	    self.save_setting("keep_above", self.__keep_above)
+! 	    
+! 	def __set_keep_below(self, value):
+! 	    self.__keep_below = value
+! 	    self.window.set_keep_below(bool(value))
+! 	    #self.__mi_keep_above.set_active(value)   
+! 	    self.save_setting("keep_below", self.__keep_below)
+! 	    
+! 	def __set_skip_pager(self, value):
+! 	    self.__skip_pager = value
+! 	    if self.window.window:
+! 		    self.window.window.set_skip_pager_hint(bool(value))
+! 	    self.save_setting("skip_pager", self.__skip_pager)
+! 	    
+! 	def __set_skip_taskbar(self, value):
+! 	    self.__skip_taskbar = value
+! 	    if self.window.window:
+! 			self.window.window.set_skip_taskbar_hint(bool(value))
+! 	    self.save_setting("skip_taskbar", self.__skip_taskbar)
+! 			
+! 	def save_setting(self, name, value):	
+  		# TEST: save settings to backend in real-time
+  		if self.__id:
+  			o = self.get_option_by_name(name)
+  			if o != None:
+  				# save single option to backend
+  				try:
+! 				    self.backend.save_option(self.__id, o.name, o.on_export(value))
+  				except:
+  					print "Unable to find backend! Option not saved."
+  					# disable backend
+  					self.__id = None
+  		# /TEST
+  	
++ 	# All the properties of the Screenlet
++ 	x = property(lambda self: self.__x,  __set_x, None, "The X property of a Screenlet")
++ 	y = property(lambda self: self.__y,  __set_y, None, "The Y property of a Screenlet")
++ 	scale = property(lambda self: self.__scale,  __set_scale, None, "The scale property of a Screenlet")
++ 	theme_name = property(lambda self: self.__theme_name,  __set_theme_name, None, "The theme name of a Screenlet")
++ 	width = property(lambda self: self.__width,  __set_width, None, "The width of a Screenlet")
++ 	height = property(lambda self: self.__height,  __set_height, None, "The height of a Screenlet")
++ 	is_widget = property(lambda self: self.__is_widget,  __set_is_widget, 
++ 	            None, "Boolean to determine if the screenlet is a widget or not.")
++ 	is_sticky = property(lambda self: self.__is_sticky,  __set_is_sticky, 
++ 	            None, "Boolean to determine if the screenlet is a sticky or not.")
++ 	keep_above = property(lambda self: self.__keep_above,  __set_keep_above, 
++ 	            None, "Boolean to determine if the screenlet should appear above other windows.")
++ 	keep_below = property(lambda self: self.__keep_below,  __set_keep_below, 
++ 	            None, "Boolean to determine if the screenlet should appear below other windows.")
++ 	skip_pager = property(lambda self: self.__skip_pager,  __set_skip_pager, 
++ 	            None, "Boolean to determine if the screenlet should appear on the pager.")
++ 	skip_taskbar = property(lambda self: self.__skip_taskbar,  __set_skip_taskbar, 
++ 	            None, "Boolean to determine if the screenlet should appear on the taskbar.")
++ 	
++ 	
+  	#-----------------------------------------------------------------------
+  	# TEST: new settings-backend over dbus-connection
+  	#-----------------------------------------------------------------------

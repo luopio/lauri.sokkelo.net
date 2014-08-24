@@ -1,0 +1,13 @@
+---
+layout: post
+title:  "KISSpics - a new addition to the libraries!"
+date:   2007-01-15 12:02:04 
+categories: KISSlibs 
+---
+KISSpics is a very, very simple class that provides a webgallery of pictures and their descriptions. From a users point of view it works like this: 
+<ul><li>create a directory (defaults to 'pics/')
+</li><li>place pictures into the folder
+</li><li>optionally create a text file (name does not matter, but it must end with the suffix .txt). Inside the text file you can add descriptions using the notation "picture_filename: description" <b>one per line</b>. Example: "foo.png: a simple picture of a foo".
+</li><li>inside your code create a KISSpics object (<i>$kp = new KISSpics();</i>), optionally specifying the target directory in the constructor.
+</li><li>use a foreach to go through the <i>$kp->pictures</i> array. Inside the array there are objects with properties url (the url to the picture) and description. First description would thus be <i>$kp->pictures[0]->description</i>. Use your own HTML to format the gallery the way you see fit.
+</li></ul><br />For an example see <a href="http://lauri.sokkelo.net/pictures.php">here</a>

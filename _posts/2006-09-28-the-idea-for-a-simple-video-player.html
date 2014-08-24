@@ -1,0 +1,16 @@
+---
+layout: post
+title:  "The Idea for a Simple Video Player"
+date:   2006-09-28 10:08:52 
+categories: coding 
+---
+While attending a lecture today, I got the idea for a very simple video player that uses the <a href="http://gstreamer.freedesktop.org">Gstreamer</a> framework. I know <a href="http://www.gnome.org/projects/totem/">Totem</a>, but I was thinking about something more like <a href="http://www.mplayerhq.hu/">Mplayer</a>, but with Gstreamer as the backend.. 
+<br />
+<br />Could be a nice idea for a small project.. perhaps I'll write one at some point. The basic requirements would be:
+<ul><li>Use playbin inside gstreamer to play all media files gst supports
+</li><li>When the user clicks on a video clip, only a window playing it will appear. Nothing else. This is the thing I love about mplayer!
+</li><li>OSD-support for displaying status, volume, etc. (like mplayer). BUT perhaps with interactive OSD elements like buttons.
+</li><li>A context menu that appears on right click. This should be the only toolkit dependable part (Qt, GTK, etc.).
+</li><li>If the user does not supply a target clip, the window will play a non-intrusive, but cool usage-video (like tips on a black background).
+</li></ul>
+Interested? Wanna help? Contact me -> lauri at sokkelo dot net

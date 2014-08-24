@@ -1,0 +1,15 @@
+---
+layout: post
+title:  "Interesting approach..."
+date:   2007-03-21 12:50:53 
+categories: coding 
+---
+I've spend some time lately looking into the source code of <a href="http://www.screenlets.org">Screenlets</a> - one of the many desktop widget/desklet/gadget -solutions available on Linux these days.
+<br />
+<br />At first I was a bit skeptical because screenlets are just basically small python classes based on the Screenlet-superclass. Compared to the easy XML-syntax of gDesklets or the syntax that SuperKaramba uses this solution might be a bit harder to use for widget developers. However I've come to the conclusion that the idea might not be a bad one after all.
+<br />
+<br />Python is a <b>very</b> easy language to use and by removing the additional step of converting the widget-markup into python code, the application becomes more stable and faster on startup. Of course this makes it harder to keep malicious widgets out because all screenlets have access to all the python modules, but on the other hand it does not limit the screenlet-developers.
+<br />
+<br />I'm anxious to see where this project goes.. currently it seems a bit closed (no SVN, no real website) and the code needs some improvement and additional features (I already tried to help w/ a <a href="http://lauri.sokkelo.net/files/properties_instead_of_setattr.patch">patch</a>). I'd start thinking about a solid API at this point so that screenlet-developers could work in peace.
+<br />
+<br />If there would finally be a great, cross-desktop, free widget engine. Time will tell..

@@ -1,0 +1,581 @@
+---
+---
+
+@import "_normalize.scss";
+@import "_syntax-highlighting.scss";
+@import "_flexslider.scss";
+
+
+$max_width: 800px;
+$content_padding: 12px 24px;
+
+@font-face {
+  font-family: 'HeroLight';
+  src: url('../fonts/hero_light-webfont.eot');
+  src: url('../fonts/hero_light-webfont.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/hero_light-webfont.woff') format('woff'),
+  url('../fonts/hero_light-webfont.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+@font-face {
+  font-family: 'HeroRegular';
+  src: url('../fonts/hero-webfont.eot');
+  src: url('../fonts/hero-webfont.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/hero-webfont.woff') format('woff'),
+  url('../fonts/hero-webfont.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+@font-face {
+  font-family: 'JuraItalic';
+  src: url('../fonts/jura-italic-webfont.eot');
+  src: url('../fonts/jura-italic-webfont.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/jura-italic-webfont.woff') format('woff'),
+  url('../fonts/jura-italic-webfont.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+html, body {
+  font-size: 13px;
+  background: #f6f6f6;
+  font-family: "Helvetica Neue", Helvetica, Verdana, sans;
+}
+
+h1, h2 {
+  font-family: 'HeroLight';
+  text-transform: uppercase;
+}
+
+h1 {
+  font-size: 24px;
+}
+
+h2 {
+  font-size: 18px;
+}
+
+a, a:visited {
+  color: #dd1133;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+p {
+  line-height: 1.5em;
+}
+
+header,
+footer {
+  padding: $content_padding;
+}
+section {
+
+}
+
+header {
+  padding-bottom: 10px;
+  hgroup {
+    overflow: hidden;
+    z-index: 2;
+    position: relative;
+    h1 {
+      a:hover {
+        text-decoration: none;
+      }
+      float: left;
+      width: 40%;
+      margin: 4px 0;
+      span {
+        font-size: 40%;
+        font-style: italic;
+        display: block;
+        text-transform: none;
+      }
+    }
+    p {
+      font-family: 'JuraItalic';
+      float: right;
+      font-size: 16px;
+      width: 60%;
+      margin: 0;
+      padding: 0;
+      text-align: right;
+    }
+  }
+  #cover-image {
+    position: fixed;
+    top: 0;
+    left: 0;
+    opacity: 0.99;
+    width: 100%;
+    height: 180px;
+    z-index: 0;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+  }
+}
+
+section#projects-section {
+
+  overflow: hidden;
+  margin: 0 auto;
+
+  > div {
+    margin: 0 auto;
+  }
+
+  article {
+    background-color: #111;
+    background-position: top left;
+    background-repeat: no-repeat;
+    padding-top: 200px;
+    width: 200px;
+    // min-height: 100px;
+    margin-bottom: 36px;
+    z-index: 0;
+    overflow: hidden;
+    float: left;
+
+    div.close-button {
+      background: #000 url('/images/old/close_btn.png') no-repeat center center;
+      cursor: pointer;
+      width: 20px;
+      height: 20px;
+      position: absolute;
+      top: 0px;
+      right: 0px;
+      z-index: 100;
+      display: none;
+      font-size: 0;
+      color: transparent;
+      text-indent: -999px;
+    }
+
+    hgroup {
+      width: 100%;
+      padding: 0;
+      background: #111;
+      color: #f2f2f2;
+
+      h1 {
+        font-size: 22px;
+        padding: 8px 12px;
+        margin: 0;
+      }
+      div {
+        padding: 8px 12px;
+        background: #232323;
+        margin: 0;
+        font-size: 12px;
+      }
+
+    }
+
+    figure, .slideshow, .video {
+      display: none;
+      padding: 0;
+      img {
+        max-width: 100%;
+      }
+    }
+    .slideshow {
+      position: relative;
+    }
+    .flexslider {
+      background: transparent;
+      border: none;
+      li {
+        * {
+          margin: auto;
+        }
+      }
+    }
+
+    div.more-text {
+      display: none;
+      width: 100%;
+      background: #000;
+      color: #f7f7f7;
+      font-size: 12px;
+      padding: 8px 12px;
+      -moz-box-sizing: border-box;
+      -webkit-box-sizing: border-box;
+      box-sizing: border-box;
+
+      div.two-columns {
+        padding: 0;
+
+        .column {
+          width: 58%;
+          p {
+            margin: 8px 0;
+          }
+          h2 {
+            font-size: 16px;
+          }
+        }
+        .column.last {
+          font-size: 11px;
+          width: 34%;
+          padding: 1% 2%;
+          margin-top: 8px;
+          background: #111;
+          color: #f2f2f2;
+          float: right;
+          height: 100%;
+          text-transform: uppercase;
+          a, p {
+            display: block;
+            margin: 8px 0;
+          }
+        }
+      }
+    }
+
+    &.expanded {
+      z-index: 10;
+      padding-top: 0px;
+      background: black;
+      div.close-button {
+        display: block;
+      }
+      figure, .slideshow, .video {
+        width: 100%;
+        text-align: center;
+        margin: auto;
+        figcaption {
+          padding: 8px 24px;
+        }
+      }
+    }
+  }
+}
+
+section#blog-section {
+  background: #f9f9f9;
+  color: #e9e9e9;
+  .blog-menu,
+  .blog-post {
+    background: #f9f9f9;
+    color: #111;
+  }
+  .blog-menu {
+    margin: 0 0 10px 0;
+    max-width: 800px;
+    margin: 10px auto;
+  }
+  div.older_posts {
+    text-align: center;
+    a {
+      font-family: 'HeroLight';
+      font-size: 18px;
+    }
+  }
+}
+
+.tags {
+  span {
+    display: inline-block;
+    padding: 4px 8px;
+    color: #fff;
+    background: #73036B;
+    &.a, &.b, &.c { background: #73036B; }
+    &.d, &.e, &.f { background: #277303; }
+    &.g, &.h, &.i { background: #D97904; }
+    &.j, &.k, &.l { background: #D91604; }
+    &.m, &.n, &.o { background: #590A03; }
+    &.p, &.q, &.r { background: #73036B; }
+    &.s, &.t, &.u { background: #277303; }
+    &.v, &.w, &.x { background: #D97904; }
+    &.y, &.z, &.å { background: #D91604; }
+    &.ä, &.ö { background: #590A03; }
+  }
+
+}
+
+section#blog-section.listing {
+  article.blog-post {
+    time,
+    h1 {
+      margin-top: 8px;
+    }
+  }
+}
+
+article.blog-post {
+  max-width: $max_width;
+  padding: $content_padding;
+  margin: auto;
+  overflow: hidden;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+
+  &.post-page {
+    > div h1 {
+      font-size: 36px;
+    }
+  }
+
+  .cover-image-slice {
+    height: 10px;
+    width: 100%;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+  }
+
+  > time,
+  > div {
+    display: block;
+    float: left;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  > time {
+    margin: 24px 0 12px;
+    font-size: 18px;
+    font-family: 'HeroLight';
+    line-height: 24px;
+    width: 20%;
+  }
+  > div {
+    width: 80%;
+
+    h1 {
+      margin: 24px 0 12px;
+      a {
+        text-transform: uppercase;
+        font-size: 22px;
+        font-family: 'HeroLight';
+      }
+    }
+    .tags {
+      margin: 0 0 12px;
+      a {
+
+      }
+    }
+    .body {
+      line-height: 1.5em;
+      * {
+        max-width: 100%;
+      }
+      p {
+        padding: 12px 0;
+      }
+      img {
+        display: block;
+        padding: 12px 0;
+        margin: auto;
+      }
+    }
+  }
+}
+
+.related {
+  max-width: $max_width;
+  background: #f9f9f9;
+  margin: auto;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  h2 {
+    padding: 0 24px;
+    margin: 24px 0 0;
+    line-height: 36px;
+    background: black;
+  }
+  nav {
+    padding: $content_padding;
+    a {
+      display: block;
+      margin: 0 0 4px;
+    }
+  }
+}
+
+footer {
+  background: #000;
+  color: #f9f9f9;
+  font-family: 'JuraItalic';
+  font-size: 16px;
+  padding-top: 10px;
+}
+
+//nav {
+//  width: 100%;
+//  padding: 0;
+//  margin: 0;
+//  display: block;
+//  overflow: hidden;
+//  background: #1a1a1a;
+//  a, a:active, a:visited {
+//    font-family: "HeroRegular";
+//    width: 33%;
+//    display: block;
+//    float: left;
+//    text-decoration: none;
+//    text-transform: uppercase;
+//    padding: 4px 0px;
+//    text-align: center;
+//    font-size: 14px;
+//    margin: 0;
+//    color: #f2f2f2;
+//    &.up {
+//      background: #1a1a1a url('/images/old/arrow_up.png') no-repeat right center;
+//    }
+//    &.down {
+//      background: #1a1a1a url('/images/old/arrow_down.png') no-repeat right center;
+//    }
+//
+//  }
+//  a:hover {
+//    color: #fff;
+//  }
+//  a:not(.scroll) {
+//    color: #1a1a1a;
+//    background: #f2f2f2;
+//  }
+//}
+
+/** Needed for masonry CSS "accelerated" transformations on CSS3 browsers */
+.masonry,
+.masonry .masonry-brick {
+  -webkit-transition-duration: 0.7s;
+  -moz-transition-duration: 0.7s;
+  -o-transition-duration: 0.7s;
+  transition-duration: 0.7s;
+}
+
+.masonry {
+  -webkit-transition-property: height, width;
+  -moz-transition-property: height, width;
+  -o-transition-property: height, width;
+  transition-property: height, width;
+}
+
+.masonry .masonry-brick {
+  -webkit-transition-property: left, right, top;
+  -moz-transition-property: left, right, top;
+  -o-transition-property: left, right, top;
+  transition-property: left, right, top;
+}
+
+/* wider screens */
+@media only screen and (min-width: 950px) {
+
+  section#projects-section {
+
+    article.expanded {
+      figure, .slideshow {
+        width: 400px;
+        text-align: center;
+        figcaption {
+          padding: 8px 24px;
+        }
+      }
+    }
+  }
+
+}
+
+@media print {
+}
+
+/* ========================================================= */
+/* Basic column layouts                                      */
+/* ========================================================= */
+.column {
+  display: inline-block;
+  float: left;
+  margin-right: 3.5%;
+  min-height: 1px;
+}
+
+.two-columns, .three-columns, .four-columns, .five-columns {
+  overflow: hidden;
+}
+
+.row {
+  overflow: hidden;
+}
+
+.two-columns .column {
+  width: 48.25%;
+}
+
+.three-columns .column {
+  width: 31%;
+}
+
+.four-columns .column {
+  width: 22.325%;
+}
+
+.five-columns .column {
+  width: 17.2%;
+}
+
+.last {
+  margin-right: 0px;
+  /*  One alternative for surviving browser differences in subpixel rounding.
+      The other is negative margins of a few pixels on last.
+      NB: this causes issues with content that takes too much space. */
+  overflow: hidden;
+  width: auto;
+}
+
+/*
+    This is an IE fix for cases where the width:auto approach does not work.
+    These are ideally placed in a an ie.css file
+*/
+.two-columns .column.last {
+  width: 48.2%;
+}
+
+.three-columns .column.last {
+  width: 30.5%;
+}
+
+.four-columns .column.last {
+  width: 22.2%;
+}
+
+.column img, .column object, .column embed {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Uneven divisions ============================= */
+.two-thirds {
+  width: 62%;
+}
+
+.one-third {
+  width: 31%;
+}
+
+.four-columns .one-quarter {
+  width: 24.125%;
+}
+
+.four-columns .two-quarters {
+  width: 48.35%;
+}
+
+.four-columns .three-quarters {
+  width: 72.375%;
+}

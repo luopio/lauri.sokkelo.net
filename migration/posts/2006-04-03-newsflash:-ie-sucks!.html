@@ -1,0 +1,12 @@
+---
+layout: post
+title:  "Newsflash: IE sucks!"
+date:   2006-04-03 10:02:01 
+categories: coding 
+---
+Just spent a few hours trying to debug a site in windows. The site in question is <a href="http://johannes.sokkelo.net">this</a> - a simple site using a few of the <a href="http://lauri.sokkelo.net/KISS">KISS-libs</a>. On firefox there were no problems. Even the javascript console was quiet. BUT looking at the page with IE (the one that comes with XPSP2) the pages were totally blank.<br />
+<br />
+After I found out it was about the JS in the page, I tried getting Javascript debugging to work in IE according to some instructions found from a msdn-blog.. didn't work.. finally through painful trial and error I found that the problem was that...<br />
+<br />
+<b>IE can't handle script elements that don't have a separate closing tag :-P </b>. So you can't use &lt;script src="blaa.js" /&gt;. Instead you have to use 
+&lt;script src="blaa.js"&gt; &lt;/script&gt;.. and this is the browser with the biggest marketshare.. oh please..  

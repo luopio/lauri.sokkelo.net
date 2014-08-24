@@ -1,0 +1,732 @@
+"160";"736";"text/html";"My sister wanted a blog and me being what I am, didn't even consider using a something solid and ready like wordpress, but instead used the opportunity as an excuse to build a new improved blog system.
+<br />
+<br />Codenamed ""Kassi"", the new blog system combines some new things I've wanted to have in KISSblog. First of, it's <b>tag-based</b> so classifying posts is a lot more flexible. Secondly it's based on the idea of *pieces*. All posts are a collection of pieces and those pieces might be text, markup, images, videos, etc. 
+<br />
+<br />Backend code is written in PHP5 and database connections are made via <a href=""http://adodb.sf.net"">Adodb</a> so the system should support a wide range of different databases.
+<br />
+<br />The whole system still relies on the same principle as KISSblog, where you need to build your own display code in PHP to get the posts visible on your page. I see homepages as something very personally styled and don't see an idea in creating a default blog page at this point. 
+<br />
+<br />There is an integrated AJAX-powered and scriptaculous animated frontend for posting however, so using the system just involves putting the libs in place and placing a foreach-print somewhere on your own page.
+<br />
+<br />I'll create a release of some sort once I've imported my own blog to the new system. Still considering releasing the software under the name <i>Kassit</i> instead of ''Kassi'', which would be a bit more fun for those who understand Finnish :)";;"0"
+"161";"737";"text/html";"I went to see <a href=""http://www.kansallisteatteri.fi/www/fi/?we_objectID=58"">the Unknown Soldier</a> this week. For those who don't know the piece, it's a Finnish national epoch describing the events during the Continuation War (the war that comes after Winter War during WWII). 
+<br />
+<br />The play has generated a lot of controversy. It features - for example - shooting down alive and dead Finnish politics, artists and national icons, such as <a href=""http://www.yle.fi/tallennemyynti/kuvat/ransu.jpg"">Ransu</a>. Some people get offended by this and other parts of the play. Just as people got offended decades ago with the original book by Väinö Linna, which depicted the Finnish soldiers in a less ""romantic light"", i.e. they we're drinking, fleeing from the enemy and all in all being more human than the super-human finnish soldiers in earlier works of art.
+<br />
+<br />I have to say that the play was <b>fantastic</b>. It's a wake-up call for the slumbering Finnish spirit that is fighting for survival in the midst of globalization and commercialization. And I heartly recommend it to all. Especially those that presume that the play is something horrible :) ";;"0"
+"162";"738";"text/html";"I just bought the Radiohead album ""In Rainbows"". I like RH, but I'm not a huge fan. One of the biggest motivators was the new scheme they are using to sell the album: you decide the price. I read on <a href=""http://yro.slashdot.org/yro/07/11/06/2035244.shtml"">slashdot</a> that 38% of people pay for the album with an average payment falling between $5 and $8. Considering the greedy nature of us humans, I'd say 38% is a good turnout. And btw I paid 10e. Try to top that :)
+<br />
+<br />Enough blabbering.. back to XUL, event loops and threads. A battle I've been fighting for a few days (for those fighting the same battles I recommend <a href=""http://wirestorm.net/blog/?cat=9"">this posting</a> (which was surprisingly hard to find)";;"0"
+"163";"739";"text/html";"Haven't been writing much lately. The reason mostly lies in the fact that I've been very busy. The days during the summer were filled with full-time day work at <a href=""http://mlab.taik.fi"">the Medialab</a> and thesis writing/research during the evenings. Rest of the time was partying, exploring Helsinki and enjoying outdoors, and since blogging is not a high priority for me, it was forgotten.
+<br />
+<br /><b>But yesterday I submitted my thesis for review</b>
+<br />
+<br />A huge feeling of relief. I'm quite satisfied with the outcome (all 93 pages of it). For anyone starting to write their thesis, I recommend starting from a very, very small focus area and moving from there. I started BIG, and then had to cut a lot of the material and refocus on a smaller domain.
+<br />
+<br />Hopefully the professor is also satisfied :)";;"0"
+"164";"740";"text/html";"A few weeks back I was employed by the <a href=""http://uiah.fi"">University of Art and Design</a> in Helsinki. So far it seems like a very nice place to work in - relaxed atmosphere, lot's of interesting and nice people, etc.. 
+<br />
+<br />I even got a Mac 15'' Powerbook as my work machine. At first I was a bit disappointed, because I had to use Mac. Then I found out the very cool features like the omni-present-hibernate (you can leave the computer ""on"" all the time) and I was pleased for some time.
+<br />
+<br />Then I became disappointed again :). Mostly it's because with Macs it's the Mac way of doing things. I so much prefer the Linux way of DIY, although that is mostly more harder to novice users. And I miss the multiple workspaces and compiz and ... (i know Macs have 3rd party workspace apps, but I've heard they are awful)
+<br />
+<br />Perhaps I'll start using my own age-old-laptop in work next week. Playing with macs was fun and way better than working with Windows, but I'm not converted from Linux :)";;"0"
+"165";"741";"text/html";"We moved the 0.40 prototype from Chris' on/off SVN repository to <a href=""http://launchpad.net"">Launchpad</a> and the move was worth it: 0.40 is making progress again and we're seeing new developers writing blueprints and uploading code!
+<br />
+<br />Launchpad is a good hosting service. Easy management of all the permissions to the repositories, the bugs, translations, future plans and basic FAQs in the same place really helps focusing on the main point: code.
+<br />
+<br />We already have three branches there: gdesklets0.40 (a.k.a. ""trunk""), gdesklets0.35 and desklets-basic which will grow to contain a group of the best desklets and controls that can then be easily distributed as a package.
+<br />
+<br />Visit the new launchpad page at <a href=""https://launchpad.net/gdesklets"">launchpad.net/gdesklets</a>";;"0"
+"166";"742";"text/html";"I've spend some time lately looking into the source code of <a href=""http://www.screenlets.org"">Screenlets</a> - one of the many desktop widget/desklet/gadget -solutions available on Linux these days.
+<br />
+<br />At first I was a bit skeptical because screenlets are just basically small python classes based on the Screenlet-superclass. Compared to the easy XML-syntax of gDesklets or the syntax that SuperKaramba uses this solution might be a bit harder to use for widget developers. However I've come to the conclusion that the idea might not be a bad one after all.
+<br />
+<br />Python is a <b>very</b> easy language to use and by removing the additional step of converting the widget-markup into python code, the application becomes more stable and faster on startup. Of course this makes it harder to keep malicious widgets out because all screenlets have access to all the python modules, but on the other hand it does not limit the screenlet-developers.
+<br />
+<br />I'm anxious to see where this project goes.. currently it seems a bit closed (no SVN, no real website) and the code needs some improvement and additional features (I already tried to help w/ a <a href=""http://lauri.sokkelo.net/files/properties_instead_of_setattr.patch"">patch</a>). I'd start thinking about a solid API at this point so that screenlet-developers could work in peace.
+<br />
+<br />If there would finally be a great, cross-desktop, free widget engine. Time will tell..";;"0"
+"167";"743";"text/html";"Did a bit of fixing on the good old home pages. The most notable improvements are the <a href=""pictures.php?ui""&phpMyAdmin=QuqPBAAGYhL7zPdwNGL7T4BRsR9>new user interface picture gallery</a> and the <a href=""projects.php""?phpMyAdmin=QuqPBAAGYhL7zPdwNGL7T4BRsR9>new project showcases</a>.";;"0"
+"168";"744";"text/html";"Did the mistake of checking my new pages through IE and noticed how messed up they were... After a bit of tweaking I got them working ok. Thanks to the excellent <a href=""http://www.tatanka.com.br/ies4linux/"">IEs4Linux-project</a> I did not have to enter window$ to fix the issues.
+<br />
+I found a <a href=""http://mar.anomy.net/entry/2006/11/23/00.06.40/"">nice snippet</a> for fast IE-detection and used that to disable decorative png-pictures that are relying on transparency. I also had to make the side menu's position ""absolute"", because ""fixed"" just does not work on IE<7. 
+<br />
+Unfortunately the gallery won't work nicely with IE6. <b>It does however work on IE5.5</b>. I guess they just broke the overflow-property at some point :-P .   ";;"0"
+"169";"745";"text/html";"KISSpics is a very, very simple class that provides a webgallery of pictures and their descriptions. From a users point of view it works like this: 
+<ul><li>create a directory (defaults to 'pics/')
+</li><li>place pictures into the folder
+</li><li>optionally create a text file (name does not matter, but it must end with the suffix .txt). Inside the text file you can add descriptions using the notation ""picture_filename: description"" <b>one per line</b>. Example: ""foo.png: a simple picture of a foo"".
+</li><li>inside your code create a KISSpics object (<i>$kp = new KISSpics();</i>), optionally specifying the target directory in the constructor.
+</li><li>use a foreach to go through the <i>$kp->pictures</i> array. Inside the array there are objects with properties url (the url to the picture) and description. First description would thus be <i>$kp->pictures[0]->description</i>. Use your own HTML to format the gallery the way you see fit.
+</li></ul><br />For an example see <a href=""http://lauri.sokkelo.net/pictures.php"">here</a>";;"0"
+"170";"746";"text/html";"...and it's using KISSlibs for its news. It reads them from my personal blog (KISSlibs category). Just one example of how easy it's to bend the libs to do your bidding. 
+<br />And the libs are under the LGPL now! Merry Xmas everyone. ";;"0"
+"171";"747";"text/html";"Me and <a href=""http://hannu.sokkelo.net:"">Hannu</a> decided to become guerrillas and went lining up for a Nintendo Wii on when it was published here on 8.12. 
+<br />
+<br />All the Wiis have been sold out so far so we wanted to be sure about getting one... so we woke up at 5am and went in front of Gigantti. Gigantti opened up at 10am so we had about four hours of waiting to do.. Hannu took a bunch of photos, we played footbag, stood in line.
+<br />
+<br />Around 7:30 we noticed that people started to line up in front of the Prisma store next to Gigantti. I heard that there might be some Wiis there as well and because it opens already at 8am I went to line there around 7:40. <b>And at 8:00 I was the first one in the line who DIDN'T get a Wii</b> :(. Frustrated I went back to the Gigantti line which Hannu was holding up.
+<br />
+<br />We waited there.. there were only a few of us. Me, Hannu and my professor (can't reveal his name because he was lining to get one for his kids as a Christmas present). Other people showed up around 9:00am. All in all there were around 18 people lining for a Wii before the store opened at 10am.
+<br />
+<br />[rant] Bloody Gigantti overcharged 20e (289e instead of the basic 269e) and they didn't even have them in stock, had to come back later that day to collect mine. Lowered my opinion of Gigantti (can't get much lower..). [/rant]
+<br />
+<br />Overall I have to say the lining-culture in Tampere sucked :). We were the only hardcore guys (some would say ""stupid"") lining there from 6am. I heard in London some people lined from Tuesday..
+<br />
+<br />
+<b>But I got my Wii and it kicks ass and makes your hands hurt</b>";;"0"
+"172";"748";"text/html";"While attending a lecture today, I got the idea for a very simple video player that uses the <a href=""http://gstreamer.freedesktop.org"">Gstreamer</a> framework. I know <a href=""http://www.gnome.org/projects/totem/"">Totem</a>, but I was thinking about something more like <a href=""http://www.mplayerhq.hu/"">Mplayer</a>, but with Gstreamer as the backend.. 
+<br />
+<br />Could be a nice idea for a small project.. perhaps I'll write one at some point. The basic requirements would be:
+<ul><li>Use playbin inside gstreamer to play all media files gst supports
+</li><li>When the user clicks on a video clip, only a window playing it will appear. Nothing else. This is the thing I love about mplayer!
+</li><li>OSD-support for displaying status, volume, etc. (like mplayer). BUT perhaps with interactive OSD elements like buttons.
+</li><li>A context menu that appears on right click. This should be the only toolkit dependable part (Qt, GTK, etc.).
+</li><li>If the user does not supply a target clip, the window will play a non-intrusive, but cool usage-video (like tips on a black background).
+</li></ul>
+Interested? Wanna help? Contact me -> lauri at sokkelo dot net";;"0"
+"173";"749";"text/html";"My three month employment with COSS and the summer of code is now over. I will no longer receive payment for my efforts on gDesklets :'(<br />
+<br />
+But just when the gdesklets community thought they would finally get rid of me, they we're mistaken! Bwahahahah :-D ! I wouldn't dream of quitting work on gD now. There's still so much to do: <u>getHTML</u> control is nearly perfect, <u>040 core</u> still needs a lot of love, <u>DD</u> awaits final touches and integration into 040, and we've just started moving management and stuff into <a href=""http://launchpad.net"">launchpad</a>.. not to mention the work needed to bring the <u>new site</u> up and working!<br />
+<br />
+Overall the summer was <b>magnificent</b>. I'm quite happy with all the stuff I've accomplished and (especially) learned during the it. The workplan was suprisingly well estimated. Nearly all the tasks we're completed and the average workday was quite close to the basic 6-8 hours (very, very hard to estimate). To compensate for the ""nearly"" word in the previous sentence, numerous extra features that weren't mentioned in the workplan got implemented.<br />
+<br />
+So what next? Well.. tomorrow I'll get up early and continue on the getHTML-control and I'll try to find the guy responsible for the gd.org site and suggest a few improvements.<br />
+<br />
+In the future this blog will still be the central place to hear about my adventures with gDesklets. The only thing that changes is the <i>(nearly)</i> weekly blogging cycle and the <i>(almost)</i> consistent report structure. <br />
+<br />
+<u>Thanks to COSS and its supporters for making this possible!</u><<br />
+<br />
+And btw, those that are looking for <b>Weekly Report #12</b>: it got lost in the <a href=""http://lauri.sokkelo.net/index.php?category=coding"">coding category</a>.. sorry about that!<br />
+<br />
+[EDIT]Oh.. yeah.. forgot to say what I've done these few days. Well, I've worked on the getHTML control and <a href=""http://gdesklets.gotdns.org/gDeskletsWiki/RecentChanges"">written pages on the wiki</a>. [/EDIT]<br />
+";;"0"
+"174";"750";"text/html";"Last week I managed to...
+<ul><li>Release a bug fix + a few new features to <b>DD</b>. It can now wait for 0.40 to reach a more stable form. Then I'll continue on it so that it'll work nicely with it. 
+</li><li>A few plans and proposals about the <b>GDE</b> (Graphical Desklet Editor) and desklet packet structure. I'll post them on the wiki as soon as it gets back online (should be around the 30th). 
+</li><li><b>UrbanExplainer</b> - a desklet (and a control) to query words from <a href=""http://urbandictionary.com"">Urban Dictionary</a>. A screenie <a href=""http://lauri.sokkelo.net/gdesklets/UrbanExplainer.png"">here</a> and the packet <a href=""http://lauri.sokkelo.net/gdesklets/UrbanExplainer.tar.gz"">here</a>. 
+</li></ul>
+ 
+<ul><li>This week I'll continue planning the <b>GDE</b> and looking for possible implementation solutions. I'll also write a <b>HTML-control</b> to support easy HTML-fetching and analyzing through desklets (good for doing web-queries). I'll write a <a href=""http://dict.leo.org"">dict.leo.org</a> desklet to test it. </li></ul>";;"0"
+"175";"751";"text/html";"This week I've done <u>really</u> long hours and accomplished...
+<ul><li>in releasing <b>Desklets Desklet</b> <a href=""http://lauri.sokkelo.net/gdesklets/dd-20-8-06.tar.gz"">alpha version</a>. It's actually closer to a beta, but not quite there yet. Of course the biggest downer is that it's designed ultimately for 040, which is not here yet... But the current DD <b>can actually be used for desklet management</b> :-D
+</li><li>improving <b>Desklet Control</b> so that it now supports actual installing and starting and removing of desklets (network transparently :-o ).
+</li></ul><br />I'm quite happy with this week. I managed to almost catch up with the workplan. Next week I'll continue doing long hours on the DD and start thinking about the Graphical Desklet Editor. Unfortunately the wiki is still down, so I'll have to do design locally. I would love to do the server side php/python to create a dynamic XML-file for DD, but I don't have access to the server. I'll ask if I can get one next week. ";;"0"
+"176";"752";"text/html";"Last week I was mostly...
+<ul><li>building the DD desklet. It is quite complete now, but a few last moment interface changes are still not implemented
+</li><li>continuing on the DD control which is now capable of parsing display files and seeking for installed desklets.
+</li></ul><br />This week I'll...
+<ul><li>continue on the DD control. A lot of work still remains (network transparency, installing, activating, etc.). I'll see how much I can accomplish since the 040 prototype is still quite useless. 
+</li><li>finish off the DD desklet.
+</li></ul><br />That should make it possible to release a test-version for the stable gD by the end of the week. All the features (like ""groups"") are not available since the old 0.35 version of gD does not support them. ";;"0"
+"177";"753";"text/html";"Traditional sunday report once again on monday :-)
+<br /><ul><li>Completed the desklets <i>Baskerville</i> and <i>RSSboy</i> (screenie <a href=""http://lauri.sokkelo.net/gdesklets/rssboy.png"">here</a>). 
+</li><li>Got the GUI prototype from Ashwin. Lot has been done but A LOT requires doing. This will be my main task for this week. Long working days ahead...
+</li><li>SVN is down and Christian (the admin) is in China.. I'm trying to get an alternate server to run on my laptop. </li></ul>";;"0"
+"178";"754";"text/html";"Approximately one month of work left. Looking at the <a href=""http://lauri.sokkelo.net/gdesklets/workplan.png"">workplan</a> things look good, but I feel that some explaining and contemplating has to be done on what has been accomplished and what remains to be done.
+<br /><h4>Done</h4>
+All the things due by today in the workplan have been completed. As things started progressing quite fast, I've also implemented multiple extra additions to the core (i18n-support, Behavior-classes, children properties, etc.) and written a few real desklets that require a bit of tweaking (beagle searcher <i>""Baskerville""</i>, RSS reader <i>""RSSboy""</i> and audio player <i>""Boombox""</i>).
+<br />
+<br />Since Ashwin took responsibility of the GUI frontend, I've been focusing more and more on the core and on the controls that the GUI will need. We've discussed deadlines with Ashwin and try to get DD ready in August.
+<br /><h4>To Do</h4>
+<ul><li>Complete the <i>Baskerville</i> and <i>RSSboy</i> desklets (this week)
+</li><li>Close the conversation (<a href=""http://gdesklets.gotdns.org/gDeskletsWiki/Proposal/LoadingControls"">here</a> and <a href=""http://gdesklets.gotdns.org/gDeskletsWiki/Proposal/LookupControls"">here</a>) over the control metadata and start working on control installation through DD (loading of controls still not possible in 040 through). Probably next week.
+</li><li>Finish the Desklet control so that Ashwin can use it and DD works properly.
+</li><li>Write a idea page for the desklet editor and start thinking about implementation (this has a low priority. I'll do this if there isn't anything I can do to speed up the release of 0.40). Due end of month.
+</li></ul><br />
+And during the weekend I completed an early version of the <b>Launcher control</b> mentioned before. ";;"0"
+"179";"755";"text/html";"This is a half-week-report. I'm going away for the weekend and won't be connected to the internet until next week so I'll explain what I'll do/I've done now: 
+<ul><li>The Baskerville desklet for beagle searches is quite complete. It can be seen <a href=""http://lauri.sokkelo.net/gdesklets/Baskerville"">here</a> and a screenie is <a href=""http://lauri.sokkelo.net/gdesklets/baskerville.png"">here</a>. It still lacks support for actually launching stuff from the found results...
+</li><li>...which brings me to what I'll be up to this weekend: <a href=""http://gdesklets.gotdns.org/gDeskletsWiki/Proposal/LauncherControl"">the Launcher Control</a>. This will make it possible to launch applications from desklets (user specified ""<i>favourite</i>"" apps). This is closely related to my other idea of <i>""global preferences""</i>, that are shared among desklets (see <a href=""http://gdesklets.gotdns.org/gDeskletsWiki/Brainstorming"">Untargetted/Core section of the Brainstorming page</a>)</li></ul>";;"0"
+"180";"756";"text/html";"Missed the <i>sunday deadline</i>, but anyway here's what I've been up to:
+<ul><li>Did the children property for container elements
+</li><li>Continued work on <i>Baskerville</i> - a beagle seach desklet I used to test the search functionality
+</li><li>Created a control for the Desklets Desklet (new gui). It does not function properly yet, because it's aimed for 040 core and all things have not yet been agreed on. Ashwin can however use it to test the display frontend.
+</li><li>Wrote Behavior classes for the core - another of those a bit boring chores that needed doing to reach 040.
+</li></ul><br />... and in other news: style support was moved to version 0.41, so I won't work on it this summer (see <a href=""http://gdesklets.gotdns.org/gDeskletsWiki/RoadMap/0.40"">the Roadmap on the wiki</a>). This week I'll be focusing on the Baskerville desklet and  Desklets Desklet with Ashwin.   ";;"0"
+"181";"757";"text/html";"Just came back from the tattoo shop ""Halo"". After one and half hours of getting punctured, my old tattoo finally got upgraded :) 
+<br />The artist in Halo was very talented and nice. Overall the experience was a lot more positive than the first tattooing in Kuopio (at Tino's). Even the pain of getting stinged with a small needle hundred times per second got quite pleasant after the first 30 minutes. 
+<br />
+<br />Now if the wounds would just heal quickly..";;"0"
+"182";"758";"text/html";"This week I've been mostly...<br />* hacking to get real DOM support in the core. This idea was however rejected by the others. The end result is to provide a ""children"" property to all container elements. This I'll probably do next week. <br />* implementing proper i18n support and writing a <a href=""http://gdesklets.gotdns.org/gDeskletsWiki/HowTo/UseLocalization""> howto in the wiki</a>. <br />* <a href=""http://gdesklets.gotdns.org/gDeskletsWiki/Proposal/StyleSupport"">planning the style support</a>. This is something I'll start implementing next week.<br /><br />
+This week I was also contacted by Ashwin, a biochemist from India. He was also working on a <a href=""http://gdesklets.gotdns.org/gDeskletsWiki/DeskletsDesklet""> GUI</a> for gD. We've been hacking together on it now and it looks very promising.<br /><br />
+";;"0"
+"183";"759";"text/html";"* Started on the GUI. Discussion and shell mockups can be seen <a href=""http://gdesklets.gotdns.org/gDeskletsWiki/DeskletsDesklet"">here</a><br />
+* Created DOMv2 - a modified version of the internal desklet structure that supports hierachical referencing. This was my first serious dive into the core of gD and it was rather positive - sparking a new wikipage and discussion: http://gdesklets.gotdns.org/gDeskletsWiki/DOMv2<br />
+* Next week I'll continue on the shell and improve DOMv2. Then I'll think about creating <a href=""http://gdesklets.gotdns.org/gDeskletsWiki/Proposali18n"">i18n support</a> and style support as IMHO these are features that should be implemented before the new GUI itself.<br />
+<br />
+DOMv2 can be taken from the <a href=""http://gdesklets.gotdns.org/gDeskletsWiki/SvnRepository"">SVN repo </a> or seen <a href=""http://lauri.sokkelo.net/gdesklets"">here</a>";;"0"
+"184";"760";"text/html";"* Improved the <a href=""http://gdesklets.gotdns.org/gDeskletsWiki/Controls"">control documentation</a> and wrote the <a href=""http://gdesklets.gotdns.org/gDeskletsWiki/ADL-parser"">DTD</a> as described in the workplan<br />
+* Fixed the RSS-control and started work on RSSboy - a simple RSS reader desklet. Currently the desklet reads one source nicely, but I'm planning on adding support for multiple sources<br />
+* Next week I'll start thinking about the new GUI for gDesklets. Instead of creating a normal GUI with GTK, the whole user interface might be a desklet that is capable of controlling other desklets. This is something we've already discussed in the wiki. My other plans include adding real tree style DOM-support to the parser as described on <a href=""http://gdesklets.gotdns.org/gDeskletsWiki/Brainstorming"">this wiki page.</a>";;"0"
+"185";"761";"text/html";"And here is the first exception to the Sunday rule :-).<br />
+<br />
+* Beagle control works, but integration into gdesklets-core is problematic (running gobject.mainloop inside another mainloop seems to be the problem)<br />
+* Seeker - a display to use the beagle control is under development <br />
+* AudioPlayer control was improved in a collaborative session with the collaborative editor ""gobby"". This was the first time I used a collaborative editor and it seemed to work quite nicely! Participating we're both of the main developers (Martin and Christian) and me. <br />
+<br />
+* Next week I'll improve the docs as soon as Beagle control becomes stable or stablish..<br />
+<br />
+And as usual the fruits of labour are available <a href=""http://lauri.sokkelo.net/gdesklets"">here</a> ";;"0"
+"186";"762";"text/html";"Came back from the trip and started working full-time again. Accomplishments:<br />
+* AudioPlayer-control works. Segfaults removed, interface improved.<br />
+* BoomBox is born: a desklet to test the functionality of the audioplayer. Screenshot <a href=""http://lauri.sokkelo.net/gdesklets/boombox.png"">here</a>. <br />
+* Now I'll move on to writing the beagle control (might be difficult, 'cos I can't find any docs)<br />
+<br />
+<b>And from now on I'll write the weekly report each sunday</b>";;"0"
+"187";"763";"text/html";"Ok. So my summer 2006 trip so far: Tampere -> Wien (by plane through Frankfurt and Zurich) -> Klagenfurt (train). In Klagenfurt we went to see Riitta and Stefan and after that continued to Germany to see <a href=""http://hannu.sokkelo.net"">Hannu</a> and Senni. Had fun, drank beer, went to Rock-im-Park. <br />
+<br />
+Then I continued to Latvia. Aino went to Finland. I spent one night alone here (actually not that alone, met Scottish people and a few soldiers from U.S, stationed in Germany) before Tuomas arrived. Now he's here and we've been around town with Irina, our lovely guide Tuomas contacted through <a href=""http://www.hospitalityclub.org"">hospitality club</a>. She was great: showed us all the sights and had the energy to direct us to the best bars (also thanks to Sofie, who also enlightened me on Riga history).<br />
+<br />
+Once we got back to the hostel I got some bad news: the american soldiers got their wallets stolen last night in a night club (Essential) we we're hanging out at (thank god we left earlier). That wasn't the worse: some guy got drugged in the club and mugged/robbed afterwards :-(. <br />
+<br />
+Tomorrow we're heading towards the awesome Palace of Science and Museum of Occupation. Irina promised to show us around Jurmala if we have the energy after wandering the whole day.";;"0"
+"188";"764";"text/html";"Haven't really done anything since leaving Austria and 
+arriving in Germany. Mainly because I have no time and no constant access to a computer. Have been checking my mail though and there's been some discussion about a terrible <b>bug</b> on the gdesklets site. I'd be happy to fix it (quite good with php), but I don't have the ""resources"" right now :-(.<br />
+<br />
+Another topic is <b>JavaScript support for gDesklets</b>. This way we 
+could possibly display Apple's Dashboard widgets. <a 
+href=""http://www.kryogenix.org/days/2006/01/22/jackfield-apples-dashboard-for-the-linux-gnome-desktop"">This 
+started the discussion</a>. I agree with Christian and Martin: encouraging DHTML(HTML+CSS+JS) instead of clean Python+XML is not a very good idea. However the possibility of supporting JS as a scripting language is not entirely discarded. ";;"0"
+"189";"765";"text/html";"Working from Klagenfurt, Austria.<br />
+<br />
+* Wrote a bunch of pages in the <a href=""http://gdesklets.gotdns.org/gDeskletsWiki"">gDesklets wiki</a> (control docs, personal info, ideas, etc.).";;"0"
+"190";"766";"text/html";"Did some work on the controls as described in the workplan. The early alpha versions are available <a href=""http://lauri.sokkelo.net/gdesklets"">here</a>. <br />
+* GST-control works, but has some known problems<br />
+* RSS-control should work nicely, but I haven't had the time to test it yet<br />
+<br />
+Today I'll head out to central Europe and I'll be back on the 18th of June. During the trip I'll try to get a part of the documentation done and perhaps start on the DTD.";;"0"
+"191";"767";"text/html";"I started working today. I'll try to get ahead as much as possible this week, since I'll be cruising around central Europe from the 22th until 18th of June. I think I can get some work done on the road as well, but I can't promise anything.<br />
+<br />
+My workplan remains the same and it can be viewed <a href=""http://lauri.sokkelo.net/files/workplan.png"">here</a>. I think I'll manage doing few of the controls this week and that way I won't get behind in schedule.";;"0"
+"192";"768";"text/html";"Here you can read about my progress regarding <a href=""http://www.coss.fi/kesakoodi"">kesäkoodi 2006</a> work.";;"0"
+"193";"769";"text/html";"Well my employment for the summer is looking quite smooth this year: just got hired to develop the environment for IOI (<a href=""http://www.ioi2006.org"">International Olympiad in Informatics </a>). This should take me about one month and then after that I can start really working on gDesklets with the support from COSS. <br />
+<br />
+I'm thinking about using the Ubuntu Dapper live-cd for the IOI-environment.. I know it's a bit experimental, but asking around #ubuntu-fi let me to believe that it should work fine. Not only would Dapper give a superb, state-of-the-art linux environment, it would also offer the Espresso installer that makes it possible to install the distribution from the LiveCD into the hardrive - a feature that was missed with the previous liveCD based on Morphix.<br />
+<br />
+Well see.. all this experimenting will probably backfire on me like usual :)";;"0"
+"194";"770";"text/html";"Just spent a few hours trying to debug a site in windows. The site in question is <a href=""http://johannes.sokkelo.net"">this</a> - a simple site using a few of the <a href=""http://lauri.sokkelo.net/KISS"">KISS-libs</a>. On firefox there were no problems. Even the javascript console was quiet. BUT looking at the page with IE (the one that comes with XPSP2) the pages were totally blank.<br />
+<br />
+After I found out it was about the JS in the page, I tried getting Javascript debugging to work in IE according to some instructions found from a msdn-blog.. didn't work.. finally through painful trial and error I found that the problem was that...<br />
+<br />
+<b>IE can't handle script elements that don't have a separate closing tag :-P </b>. So you can't use &lt;script src=""blaa.js"" /&gt;. Instead you have to use 
+&lt;script src=""blaa.js""&gt; &lt;/script&gt;.. and this is the browser with the biggest marketshare.. oh please..  ";;"0"
+"195";"771";"text/html";"Added KISSsmilies to the ever-growing KISS libraries. It will convert all ""ASCII-smileys"" into image-elements. Just like this :) :-D 8-) .. Ooooh :-o ! This just opens new worlds ;) !<br />
+<br />
+.. and everything is done via javascript, so the work of conversion is done by your computer, oh gracious viewer :) . ";;"0"
+"196";"772";"text/html";"Tight kesäkoodi-finals.. eight people got in, seven showed up (no idea why one didn't), five got picked, and I was 
+one of them! <b>Hooray!</b> Now I get to work on <a href=""http://www.gdesklets.org"">gDesklets</a> all summer. Something I would have done (a bit) anyway.<br />
+<br />
+I'll create a new category on the blog for reporting on how my gDesklets work is progressing.<br />
+<br />
+And I got a 250GB LaCie (Porsche design :-* ) USB-hardrive. That combined with the nice and simple backup utility <a href=""http://sbackup.sourceforge.net/HomePage"">""SBackup""</a> should keep my /home and all the work safe.<br />
+<br />
+I should be working on my Agent software article, but I think I'll hack a little on KISSsmilies..";;"0"
+"197";"773";"text/html";"It was a nice weekend, if you don't count the fact that my /home was destroyed... Buying a (microsoft) XBox 360 gamepad so that we could play a game with <a href=""http://tuomas.sokkelo.net"">Tuomas</a> forced me to upgrade my WinXP to SP2 (I know, long due). This upgrade failed. Windows gave a brilliant error report: ""incorrect parameter"" and failed to start. As a nice side-effect it distorted the partition table somehow and destroyed my home-partition. F*cking windows.<br />
+<br />
+Thank god I had some backups, but they're a month old. This means all my gdesklets work is lost (and movies, music, configurations for all the programs).. We'll I guess it's time to buy a usb-harddrive for better backups.<br />
+<br />
+And tomorrow I have the COSS-summercode finals.. hope I make it. ";;"0"
+"198";"774";"text/html";"Bought a new(used) phone from huuto.net. The model is Sony Ericsson k750i. My first non-Nokia phone and I have to say I'm quite pleased. Don't even need windows for importing mp3s into it, it shows up nicely as a remote card reader on my Ubuntu Dapper. <br />
+<br />
+The only problem is syncing with Evolution, which is currently impossible(?). I hope this gets fixed, as it would be very nice to share the calendar and tasks between the laptop and the phone.<br />
+<br />
+And in other news: I got into the <a href=""http://www.coss.fi/kesakoodi"">COSS kesäkoodi</a> final (google summer of code kinda thing)! The final will take place next Tuesday in Helsinki. I hope I'll get the job (and good luck to the other contestants). ";;"0"
+"199";"775";"text/html";"I had to install Ubuntu Dapper to get my hands on gstreamer 0.10. A friend of mine had success with XGL/Compiz with ATI and I decided to give it a try since it's so easy with Dapper. I have to say it is incredible. Thanks to David Reveman and all the other giants for making this possible!!<br />
+<br />
+<a href=""img/xgl-screenie.png""?phpMyAdmin=QuqPBAAGYhL7zPdwNGL7T4BRsR9><img style=""float:right"" src=""img/xgl-screenie-thumb.png"" /></a><br />
+It made my desktop quicker, prettier and more easy to use (expose effects, etc.). Here's a screenie for explanation. The 
+effect in question is the switching of workspaces. Soundgarden is playing between. Click on it to get a bigger 
+view.<br />
+<br />
+Although it's still alpha software, it works nicely. A few complaints still: windows from all workspaces show up in alt-tab-switcher and getting video to work required some tweaking. This tweaking resulted in the problem that window-decoration-cross won't close mplayer (have to press q). These are minor issues. On the whole I have to say this is the best thing I've seen on Linux in a long time! At last my desktop does not pale in comparison to Mac OS X (not to mention windows :) ). ";;"0"
+"200";"776";"text/html";"[rant]The problem using Linux is that I can't test my pages with M$ Internet Exploder :-P. Again I noticed that IE doesn't respect background images and colors used at the same time (hence the grey bits in the corners) and style-definitions for the submenu links we're creatively ignored. <br />
+<br />
+It <b>should</b> be fixed now. Can't really promise anything, since <i>I can't test it on IE (too lazy to boot into windows)</i>.<br />
+<br />
+I'm not going to slap one of those ""This page is best viewed with blaablaa"" -tags here! No way! Although I'm highly tempted. [/rant]";;"0"
+"201";"777";"text/html";"Sorry 99.5% of the world. Next bit is in finnish.<br />
+[finnish]<br />
+TEHTÄVÄNANTO:<br />
+Paljastan viisi omituista tapaani/piirrettäni.<br />
+Tämän jälkeen valitsen seuraavat viisi ihmistä, jotka haastan tekemään saman perästä(paljastamaan viisi outoa tapaansa omaan päiväkirjaansa).<br />
+Heidän tulee myös kirjoittaa nämä säännöt merkintäänsä.<br />
+Linkitän haastamani ihmiset tämän merkinnän loppuun ja käyn ilmoittamassa heidän kommenttilaatikkoihinsa haasteesta ja tästä merkinnästä. :><br />
+<br />
+(pasifistinen luonteeni estää minua haastamasta ketään! the vicious circle shall end here! - toim.huom)<br />
+<br />
+1.(Suuri) Osa moottoripyörällä ajon viehätyksestä on se, että se on minusta (hieman)pelottavaa.<br />
+<br />
+2. Omistin pienenä oman imurin. Nykyään en enää pidä niin siivouksesta. <br />
+<br />
+3. Kärsin www-OCD:stä (Obsessive Compulsive Disorder[sic?]) - kotisivujen ulkomuoto muuttuu näköjään vähintään 2 kertaa vuodessa :-O<br />
+<br />
+4. Olen oikeasti vedenalainen teini-samurai-mörkö.<br />
+<br />
+5. Olen erittäin huono keksimään itsestäni huonoja tai outoja puolia, vaikka niitä kyllä varmaan löytyy roppakaupalla. Tietenkin ""oudot puoleni"" ovat mielestäni aivan normaaleja ja ""huonot puolet"" vaan erinäköisiä vahvuuksia (it's not a bug, it's a feature!) :).<br />
+<br />
+[/finnish] ";;"0"
+"202";"778";"text/html";"I don't know why, but the only constant seems to be change when it comes to my homepages. I just needed an excuse. This time it was all the hassle with summer jobs. ""I need to update my home pages so that I can get a job for the summer"".. Yeah.. right.. Anyway here it is. Lauri.sokkelo.net version XXX. At least the header changes randomly now :). <br />
+<br />
+And all the photos are taken by me! Don't come claiming for &copy;";;"0"
+"203";"779";"text/html";"Yesterday I finished the last bits of Pet Hotel - the client management system for pet hotels. Programming GTK with Python was fun and fast compared to doing Java or Win.Forms stuff.<br />
+<br />
+I'll make a webpage for the program and put it there (it's GPL). Don't think it'll help a lot of ppl, because it's designed for such a specific purpose, but just in case...";;"0"
+"204";"780";"text/html";"It's that time of year again. Scream, kick, bite and crawl to get yer ass employed for the summer. That means that I'll try to improve this site a bit, finish off Pet Hotel Receptionist (almost done) and create a nice, appealing CV (without cheating ;) )<br />
+<br />
+.. And I'll have to get a job because I just paid taxes from my latest projectsalary with a nice tax percent of 34%. Damn taxofficials messed up my taxcard in Kuopio :-P. I'll get my money back, but not until christmas.";;"0"
+"205";"781";"text/html";"It's 2006 and I survived the new year's eve celebrations :). Happy new year to everyone! ";;"0"
+"206";"782";"text/html";"Using the newest-state-of-the-art software isn't always the best solution... I tried the newest <a href=""http://www.suspend2.net"">software suspend</a> on my laptop and it screwed my /, meaning I couldn't boot my linux anymore. <u>Thank god I have my home-directories on a separate partition</u>! <br />
+<br />
+Anyway. All is well now. Running a fresh <a href=""http://ubuntulinux.org"">Ubuntu 5.10</a> linux now (didn't really have the time or energy to go through a stage 1 gentoo install (and stage 3 is only for pussies ;) ) ). I don't recommend trying the 2.2-rc1 suspend on your only computer.. It seems to be reiserfs-related.. I'm sure Nigel will fix it soon. ";;"0"
+"207";"783";"text/html";"So I took part in the SymbianRoadshow-training/recruitment day offered by <a href=""http://www.vega.fi/fi/"">Vega technologies</a>. Learned quite a lot of stuff about symbian, played around with a few phones (even one that wasn't available on the market yet), broke some example code the lecturer had done and finally drank beer, ate pizza and enjoyed a nice relaxing sauna evening. All this paid by Vega. <br />
+<br />
+I probably won't work for them in the future (symbian didn't look so ""developer-friendly"", nor am I so interested in symbian programming), but at least they succeeded in giving a nice image of the business. I'm sure to recommend it to anyone looking for a developer job in symbian programming. Thanks for the education, pizza, beer and the sauna Vega! ";;"0"
+"208";"784";"text/html";"Well.. I wasn't completely satisfied with the outlook (not sure if I'm satisfied now, but it's at least better) and did some tweaking.<br />
+Enough playing around with bluefish.. now I'll have to get to work with the Graphical Interfaces -coursework (and boot into windows :( ). ";;"0"
+"209";"785";"text/html";"We did a new contract with Opetushallitus and continued work on Koulun Hyvinvointiprofiili. We decided to go more pro this time and I installed Subversion and created a repository for the project. I also changed from using Bluefish into using Eclipse with phpEclipse. Bluefish is an brilliant editor, but I just wanted to try Eclipse for a change (and this far eclipse seems even better). ";;"0"
+"210";"786";"text/html";"PetHotelCMS is a Client Management System I'm making for a pet hotel. It's quite simple but has a few nice / advanced features such as a client - server -architechture that allows multiple clients to access and modify the client database. Currently the database is MySQL but using any other DBAPI2.0 compliant db should be no problem. 
+
+..and it's a python project. The client will be implemented on python and gtk (once i manage to desing the interface), so it's linux only. ";;"0"
+"211";"787";"text/html";"Ok. So here are the new pages. Changed the layout, added some functionality (this blog for instance) and updated everything. The old pages are still viewable in the ""other""-section (including some very ugly flash-designs :) )
+
+This page is powered by KISS-stuff. See ""projects"" if you need a very simple blog like this. ";;"0"
+"212";"788";"text/markdown";"I've finally managed to integrate ""Kassi""   - my new blog engine that is already in use at [kommari.net](http://www.kommari.net) - on my own pages. This will give me the opportunity to easily upload photos and text written in Markup.
+
+The main motivation to get this working as fast as possible was my trip to Hong Kong, Malaysia and Cambodia that begins tomorrow at 3AM. Hopefully I'll be able to send photos and write something during the adventure.		";;"0"
+"213";"788";"text/markdown";"[EDIT] Oh yeah.. forgot to mention that the pages themselves got a facelift as well. [/EDIT]";;"2"
+"214";"788";"image/png";"c3157ef6d41ad437a7032dd47db28283.png";"kassi-image-table-center#Just testing image submission";"1"
+"215";"789";"text/markdown";"My first trip to HK is now over and I have to admit that the four days I spent there have left a positive feeling about the metropolis: prices are cheap, people are nice, there's a lot to see and moving about is easy.";;"0"
+"217";"789";"image/jpeg";"cc42ec8137639ac885da5d31fed82d18.jpg";"kassi-image-table-center#The normal view when looking up in Hong Kong";"1"
+"218";"789";"text/markdown";"Stayed at Chung King mansions, a block full of hostels in Tsim Sha Tsui (Kowloon). Stay was cheap, with a night in a four bed dorm w/ shower costing 90 HK$ (~7e). Also got the chance to talk spanish with Oscar, an Argentine football star who played for his country against other youngsters and met a South Korean girl who is applying for the same school as I am (TAIK)... small world, eh?	";;"2"
+"219";"789";"image/jpeg";"d7d404e13231891b3762fb0c725ee4ce.jpg";"kassi-image-table-center#10,000 Buddhas monastery in Sha Tin";"3"
+"220";"789";"text/markdown";"Head to Wan Chai or NE Kowloon for electronics, Tsim Sha Tsui for lodging or museums and the Peak to get a nice view over the central part of the SAR.
+
+Luckily I get to go to HK again on my way back. Maybe I'll have time to see the world's largest sitting Buddha.";;"4"
+"221";"790";"text/markdown";"Stopping by at Khao San road - the notorious travellerghetto in Bangkok. We'll be catching a bus today to try and reach the border.
+
+Last night I broke my arm, while climbing down from my bed on the train from Malaysia. Hurts like hell. Probably just a spasm, but will surely annoy me for a few days.  
+
+Khao San seems interesting as a money wasting target. Perhaps we'll stop here on our way back and buy some traditional traveller garbage - like a T-shirt that has a picture of a married couple and the text ""Game Over"".. not sure if Aino would appreciate it :)";;"0"
+"222";"791";"text/markdown";"Entering Cambodia was a shock.. in a positive way. Arriving to the border 10 minutes before it was closing, we were greeted with shining hotels and casinos, something that was not surprising after reading Amit Gilboa's ""Off the Rails in Phnom Pehn"", but remarkable still. After we paid the very helpful border guards 1000 bath for a visa (20USD, so use dollars if you have any), we haggled a taxi to Siem Reap for 35USD. 		";;"0"
+"223";"791";"text/markdown";"After a three hour drive in total darkness evading pedestrians, stray dogs and huge trucks on a dirtroad that was in truly awful shape, we arrived to Siem Reap, the basic destination for anyone wanting to visit Angor Wat. We took a tuktuk to a hostel in the centre and after leaving our bags ventured out to get something to eat. The 'Bar street' in Siem Reap was quite packed even though it's not season.
+
+A tip to anyone travelling to Cambodia from Bangkok: Don't use the basic tourist busses from Khao San. Take a public bus from Mo Chit to the border town. It costs around 215 bath (4e) + tuktuk to the border + taxi to Siem Reap, so it's a bit more expensive, but saves you time as the 'scam busses'take 12h to reach Siem Reap, and as the name suggests, they tend to scam tourists on visa costs, etc..
+
+Now I'll have to stop this nonsense and return to the streets. Still a lot more to see in this town and even more in Angor Wat, which we'll probably visit tomorrow. ";;"1"
+"224";"792";"text/markdown";"Second full day at Siem Reap started - like the days of so many other tourists - at 5AM with a tuktuk-drive to see sunrise at Angkor Wat. Place was already packed at that time. After eating breakfast in a food stall inside Angkor Thom, we saw Bayon, the weirdest of the Temples, Ta Prohm - also known as _The Tombraider Temple_ - and several other magnificent structures.
+
+The whole area is enormous and after a short while we're already suffering _temple-fatigue_, a variation of church-fatigue that everyone who's been church-sightseeing in Europe knows.
+
+Now I'm tired. We promised to drink with out tuktuk-driver today, but I'm not sure if I have the strength :)";;"0"
+"225";"793";"text/markdown";"Spent a few days in Phnom Pehn. The city was ok, but a few days is enough. One for the National Museum and the Royal Palace and one for the horrors of Khmer Rouge. The amount of air pollution and noise started to get to us and we wanted a break from it all. 
+
+And so yesterday we arrived to Sihanoukville - Costa del Sol of Cambodia.. not really. Can't really compare them, but it's a beach resort anyway. Makes me really appreciate the beautiful beaches of Montezuma and Samara in Costa Rica. The ones here are relatively crowded (at least on weekends), dirty and full of beggars. 
+
+We were both ready to quit already today and move forward but then we decided to hire a boat to take us to a secluded beach. We first went to snorkle a bit around some nice corals and then moved to a beach resort that was prepped for a party tonight. I'm guessing the island's name was _Koh Kaip_ or something. Didn't stay there for too long, but still we both got really badly sunburned.. aww, how I really hate sunburns. Now my right arm is fckd, and my back entirely scorched.
+
+But I guess we're still heading back to that beach for that party tonight :). That'll be the last one this time in Cambodia.";;"0"
+"226";"794";"text/markdown";"Some random notes to get a glimpse of the prices here:
+
+  * beer in bar: 0.5 - 1.5$
+
+  * 24-case'o'beer: 16$
+
+  * guesthouse, 2 bed room: 4 - 13$
+
+  * ""simple food"": 1.5$ - 2.5$
+
+  * a restaurant meal: 3.5$ - 
+
+  * 150km in a taxi: $35
+
+  * bus ticket for the same: 7$
+
+  * rent a scooter for a day: 5$				";;"0"
+"227";"795";"text/markdown";"About two weeks ago I ordered a [Dell XPS M1330](http://www.dell.com/content/products/productdetails.aspx/xpsnb_m1330?c=us&cs=19&l=en&s=dhs). It's obviously a very popular laptop abroad, but here in Finland I haven't seen anyone packing one. I guess the main reason is that you can't find it here anywhere in-store. You'll have to contact the corporate sales of Dell Finland and request one. 
+
+In the end it wasn't that difficult. Just build one from e.g. Dell Sweden, send the specs to your appointed seller (better call in advance to give your details) and then confirm the purchase.
+
+I was harassing them with a lot of questions, such as ""can I buy the laptop abroad and then order a sv-keyboard?"" and ""can I get the ubuntu laptop in Finland?"". Both were answered ""no"". The price for my laptop was around 1300e for a system with 3GB RAM, 2.40GHz processor, Nvidia 8400GS, led-display, etc.. so it's no that bad for a Finn price.
+
+Now I've installed **Ubuntu Studio**, which kicks butt. It's an artist version of Ubuntu with spiffy graphics and a lot of audiovisual content creation programs.
+
+I'll write a short howto once I get the Dell Mediadirect working..	";;"0"
+"228";"796";"text/markdown";"To save the pain from others of repeating my mistakes, I'll write this short howto. In the end you should have a working system with Ubuntu, Vista and Dell MediaDirect.
+
+1. Boot using Mediadirect CD, choose the second option and allocate how much you want for Vista (I gave the beast 50GB)
+2. Install Vista
+3. Boot into Vista and insert the Mediadirect CD again. Finish MD installation
+4. Insert your Linux CD, boot
+5. Install your flavor of Linux (I used Ubuntu Studio) by creating new partitions in the empty second partition.
+
+After this I had a working setup with a working Mediadirect button (I could press the home-button when the computer was off and boot straight into MD)";;"0"
+"229";"797";"text/markdown";"Dell Media direct proved out to be a Windows CE Embedded system with a simple media GUI. Not really useful, since it only reads FAT-drives and has no network connection.
+
+Since it's a windows system, it only took me two minutes to break it and start ending up with a blue screen of death on each MD bootup (I honestly didn't do anything wrong.. just used it, it hanged and then I had to hard boot..).
+
+I've been thinking about replacing the system with a quick'n'small linux distro with something like [Elisa](http://elisa.fluendo.com/) starting up instantly, so I did some research and it seems that starting with the **home button starts the MBR**, while the **normal start button fires up the active partition** (you can only have one). 
+
+Unfortunately if I install GRUB on the linux partitions start and mark it active, vista hijacks the boot flag to its own partition. So now I have GRUB on MBR and MD still works.. for now.
+
+** Quick how to fix your broken MD Howto **
+
+This is what I did to fix the blue screen of MD death
+
+1. Get the [Dell MD recovery disk](http://support.ap.dell.com/support/topics/global.aspx/support/dsn/en/document?docid=26B720E7D596B89DE040A68F5B280867&c=my&l=en&s=gen) and follow the instructions
+2. After this I ended up with a broken windows install, so insert the vista CD and do the repair bit that comes after you choose the language.
+3. Insert your flavor of live CD linux (I used [Puppy](http://puppylinux.com/) and I heartily recommend it)
+4. Install grub to your MBR with grub-install /dev/sda
+
+I guess I'll look into replacing the MD with a linux distro at some point. I found a [howto on it](http://caffeinbar.com/wp/2007/03/08/start-linux-with-dell-mediadirect-button/), but I really want to:
+- press the power button to enter grub to choose between ""the main linux"" and vista
+- press home to boot a quick, small linux for media stuff
+
+If you've already succeeded or are interested in the same thing send me a mail at lauriATsokkeloDOTnet	";;"0"
+"230";"798";"text/markdown";"After all the struggling, my final solution is to have Vista on one 50GB partition and Linux on the rest. **No damn MediaDirect bloatware anymore**.
+
+My home key now boots into windows and my normal powerkey into GRUB and linux. Just perfect :).
+
+Huge thanks to ""Mario666"" for his [howto on notebookreview forums](http://forum.notebookreview.com/showthread.php?t=231747).
+
+**Just remember to run the command line in Vista as Administrator** (right click the icon in the start menu). Otherwise the rmbr.exe command will just throw a useless error.";;"0"
+"231";"799";"text/markdown";"I can imagine a handful of huge telecommunications corporations are making huge profits on almost useless pieces of strange teleconferencing solutions that they sell to high level managers in big organizations.
+
+Yes, I'm looking at you [Konftel](http://www.direco.fi/) (and glancing at you Sonera).
+
+If we'd all just jump to the internet age and use skype, or better yet, ekiga, or [wengophone](http://www.wengophone.com).		";;"0"
+"232";"800";"text/markdown";"Long time since last post.. things have accumulated in such fashion that I'll have to do this one braindump.
+
+First off if someone was wondering the weird Turkish pages that replaced all index-pages on sokkelo, the reason was that our webhosting provider was hacked by some Turkish script-kiddies (damn kids). Apparently they got in via a hole in their software (not a direct attack against sokkelo). Luckily only index-files needed replacing.
+
+Secondly I've posted my first processing experiments here in case someone is interested. The sketch in question takes photos via the webcam and allows you to draw over them with a laser pointer (or mouse, if you can't project the image anywhere). Kinda works like the [Graffiti Research Labs Laser Tag system](http://www.youtube.com/watch?v=DKbtTPYZEig) except we don't do perspective correction and they don't do photos. The thing was used in our official MLAB-party that kicks off our studies in HelsinkiMediaLab. Our [Flickr MLAB-feed](http://www.flickr.com/photos/30634246@N07/tags/medialabhelsinki/) is now cluttered with ""art"" created by people at the party (we had automatic flickr uploading through a python script).
+
+Here's one work just as an example. Download the sketch [here](http://lauri.sokkelo.net/files/neon_play.zip). Let's say it's licensed under GPL.
+";;"0"
+"233";"800";"image/jpeg";"b8bbf16ff7bcae367aea7602f1662761.jpg";"kassi-image-table-center#Neon playing";"1"
+"234";"801";"text/markdown";"Ordered myself a [fit-pc from Compulabs](http://www.fit-pc.com/new/about-fit-pc.html) from the States. Thanks to the weak dollar it was more cheaper to order it from there than from Sweden. I was first excited about getting myself a [Bubba server](http://excito.com/bubba/about-bubba.html), which would have been nicer since the shop which makes them is Swedish but technically Bubba is missing a lot of the things that fit-pc has, while consuming more power in the process (not a lot though).
+
+Now I need to come up with a purpose for my fit-pc :). I guess I'll cram a 250GB HDD into it, install gentoo (need performance) and tweak it to run as a wifi-router/backup-server/web-photo-server/automatic-backupper/audio-player/bittorrent-downloader -mean-machine. It's claimed to be powerful enough to play basic divx-clips, but I'm not planning on putting myth or anything on it.
+
+All this under 300e.. let's see how it turns out.	";;"0"
+"235";"802";"text/markdown";"Interface Design with Electronics is one of the best workshops Mlab offers. During a five day period students get a very hands-on experience with Basic stamp microcontrollers, various sensors and other electronic stuff. As always the workshop ends with a group project. 
+
+We did ""Mothman"", a strange audio-visual ""installation"" that reacts to ambient light and distance from viewer. We used Pure data, Processing and Basic Stamp with an ultrasound and light sensors. It was a lot of fun. Now I'm trying to come up with a new project idea that would involve sensors..
+
+Get the code and graphics [here](http://lauri.sokkelo.net/files/moth.tar.gz). Sound excluded due to big size. For a glimpse see [the presentation we held](http://www.youtube.com/watch?v=1drR-8F69OM).";;"0"
+"236";"803";"text/markdown";"Piece by piece I've been improving my home setup consisting of a laptop(mac), desktop(linux) and small server(fit-pc w/ linux). I'm fairly happy with what I've got now. Not only does the small server run '''trac/svn/lighttpd+php''' for development, it also serves as a backup server through a few '''rsync''' scripts running over ssh and a torrent downloader via '''rtorrent'''.
+
+Once the linux wlan drivers support master mode, I can also use the box as a WLAN access point, getting rid of one more appliance.
+
+One very pleasant thing I just accomplished was setting [Pulseaudio](http://www.pulseaudio.org) to run as a server. Now I can either play music via MPD or stream it directly from my desktop (and it's dead simple - I just pick the output sink with a few clicks). Reminds me of the streaming support in apple airport stations, which I always thought was cool. Of course Pulseaudio does this and a [lot, lot more](http://www.pulseaudio.org/wiki/FAQ).
+
+Now I'm just waiting for the Android phones to hit Finland.. then my - by then self-aware - home audio system will be complete (except for obvious bits, like good speakers and a decent amplifier)..	";;"0"
+"237";"804";"text/markdown";"So the Helsinki Medialab demoday came and went. It was great. Again a chance to see loads of mlabbers in one place and a variety of inspiring projects. 
+
+This time I had something to show as well. A simple idea based on photo compositions. In short I created scripts that downloaded all the mlabber photos from the net, analyzed them and created copies of them by composing all the images together. Then I created a [Processing](http://www.processing.org) visualization using some of the OpenGL stuff it provides. Below is my image composed.";;"0"
+"238";"804";"image/jpeg";"790e1531e1a171707a2ec069b4237fad.jpg";"kassi-image-table-center#Me made out of 1024 mlabbers";"1"
+"239";"804";"text/markdown";"I also wanted to play around with electronics. Had a very hard time trying to think of a clever way of using them with this composition project and in the end didn't come up with one. Instead decided to create a simple UI to the visualization.
+
+The end result was the magical milk can. Rotating the can controls the rotation of the images, moving your hand towards the bottom of the can makes the images fly faster. Simple, useless, confusing but a lot of fun to create and use.";;"2"
+"240";"804";"image/jpeg";"de489e19de95dadc3fca738ba9d4e5c3.jpg";"kassi-image-table-center#The User Interface 2.0. This is the future.";"3"
+"241";"805";"text/markdown";"I'm just taking the realtime visuals workshop here in TaiK and while playing around with Isadora (the app we're using) I started wondering if there's something for Gstreamer that does the same.
+
+Live Cinema is basically about modifying video clips and effects in real time. A lot of these apps rely on sets of patches (another example would be puredata), which usually are a set of components relying and transforming the data before it ends up on the screen.
+
+Gstreamer does this on the low-level. You can do these ""patches"" even directly through the command line. These include effects. I figured there has to be a gst app for these things, but there isn't.. the only one I found was [Gstreamer Editor](http://gstreamer.freedesktop.org/modules/gst-editor.html)).
+
+I think it would be cool to create one. This could also result in a lot of new effects available for gst. Perhaps one could use [Clutter](http://clutter-project.org) for the UI :).";;"0"
+"242";"806";"text/markdown";"After a few days of tinkering and a few days of waiting for the right parts to arrive I've finally managed to connect an Arduino board to a Nokia N800 internet tablet. First steps towards the Mlab robot.. I was really happy to find out how hackable the internet tablets are! Although there are numerous tutorials around the web, I'll put a short description of what I did before I forget:
+
+# Steps to connect N800 to Arduino #
+1. update N800 to OS2008
+1. install rootsh to gain super-user access
+1. install USB Control (enable Chinook Extras repository)
+1. enable host mode through usb control
+1. get a *female type A-female type A* USB connector. You might need to solder your USB-USBmini cable a bit if it's only slave mode. I bought one cheap from <verkkokauppa.com> and it seems to work both ways out of the box. I guess you can also use an external power source if you don't want to solder your cable(?).
+1. get kernel modules for USB Serial communication and FTDI chips from <http://fanoush.wz.cz/maemo/modules-rx-34-2.6.21.0.tar.gz>
+1. unpack and install kernel modules **as root** with
+
+ *insmod usbserial.ko*
+
+ *insmod ftdi_sio.ko*
+
+1. plug in your arduino
+
+## Extra: Python testing
+1. get [PySerial](http://pyserial.wiki.sourceforge.net/pySerial) and install it. You can also just copy the python module from some *nix computer (I just copied mine from my linux box)
+1. run this:
+
+        import serial
+
+        ser = serial.Serial('/dev/ttyUSB0', 9600)
+
+        while 1:
+
+            print ser.readline()
+
+
+you should see whatever your arduino chip is printing.
+
+Voilá! You have a connected a very flexible development board with a very hacker friendly, touchscreen enabled linux computer! Think of the possibilities :)									";;"1"
+"243";"807";"text/markdown";"Found from [Stack Overflow](http://stackoverflow.com/questions/234075/programmer-jokes-whats-your-best-one)
+
+> A man flying in a hot air balloon suddenly realizes heâ€™s lost. He reduces height and spots a man down below. He lowers the balloon further and shouts to get directions, ""Excuse me, can you tell me where I am?""
+
+> The man below says: ""Yes, you're in a hot air balloon, hovering 30 feet above this field.""
+
+> ""You must work in Information Technology,"" says the balloonist.
+
+> ""I do"" replies the man. ""How did you know?""
+
+> ""Well,"" says the balloonist, ""everything you have told me is technically correct, but It's of no use to anyone."" The man below replies, ""You must work in management.""
+
+> ""I do"" replies the balloonist, ""But how'd you know?""
+
+> ""Well"", says the man, ""you donâ€™t know where you are, or where youâ€™re going, you expect me to be able to help. Youâ€™re in the same position you were before we met, but now itâ€™s my fault.""";;"0"
+"244";"806";"image/jpeg";"df1f56aa7779740891bc2a75604ed72e.jpg";"kassi-image-table-center#Pretty couple aren't they";"0"
+"245";"808";"text/markdown";"Silently we (me and Jari Suominen from Medialab) released PENALTI - a fun ball racing game that uses the accelerometer available on many symbian (s60) phones. The idea started from mlab's Rapid Mobile Prototyping workshop and was fueled by Nokia Forum Game Development challenge.
+
+We did a few days of intensive coding and submitted our game. Didn't win the whole thing, but we were the best in TaiK (dunno, if anyone else participated :) ). Prize? A Nokia 5800 phone. Suits me fine, since my trustworthy ericsson is falling apart and the N95's from mlab don't suit my style. I'll just use it until I get my hands on an android phone..
+
+Thanks to the symbian effort of making installations as hard as possible, you'll need to do some work to get penalti working. Mostly just installing a few extra applications. Get the game and the instructions from [the site](http://lauri.sokkelo.net/penalti).		";;"0"
+"246";"809";"text/markdown";"ok. so. update. i was accepted to study at the university iberoamericana in mexico city next autumn. i'm signed in as a graphical design student even though my ""application"" mentioned interest areas as industrial and spacial design.. doesn't really matter - i guess i can move rather freely between departments.
+
+the bigger issue is the need to learn spanish in advance. i was planning on taking a course in spain during the summer, but many people directed me to a more better approach of taking a course before the school starts in mexico city, so now i'm hunting for a course there. at least i'll save the airline tickets and won't pollute, but i would've wanted to visit spain as well.. some day..
+
+in addition to this i needed to buy myself a laptop since the macbook pro i'm now using is from my work. so i got myself a eee 1000he.";;"0"
+"247";"809";"image/jpeg";"cb8b141f3208addc9af4c07dc38d0ada.jpg";"kassi-image-table-center#eee 1000he";"1"
+"248";"809";"text/markdown";"only comes with XP, so the first things after i got the wireless up was a visit to www.getfirefox.com and then www.ubuntu.com. the new 9.04 netmix runs really nicely here. 
+
+the size, keyboard and battery life are really nice. flash is such a resource hog that some more highres flash sites are slow. otherwise all seems ok. the price is less than 400e so i don't have to be extra careful with it either (good thing in mexico city..).
+
+the idea to buy this i got after our lovely visit to berlin with aino. almost bought a samsung x360 instead, but then came to my senses.. macs are good too, but something is driving me away from them.. maybe it's the fact that i have deal with them everyday in work/school. anyway berlin was excellent. i'll have to write a post on it once i have time to implement map embedding in this blog..";;"2"
+"249";"810";"text/markdown";"blogging from iceland during [the Raflost](http://halli.lhi.is/raflosti/) festival. Reykjavik is cool (in both senses of the word). We're building artsy stuff with people from very different backgrounds. It's fun and a valuable experience. You can't get much further than putting dancers and nerds work on the same project :)
+
+I'm now following a lecture. Can't stop playing with processing...";;"0"
+"250";"810";"image/jpeg";"fa9fc7adfe1ac6522717e9e5f35179d3.jpg";"kassi-image-table-center#";"1"
+"251";"811";"text/markdown";"Arrived to México yesterday. Instead of the requested family accommodation I got placed into a hostel. Not a major drawback.. location is ok and the room is nice. First drawback was that my phone does not seem to work here.. I guess that's the perfect ""excuse"" to buy that Android phone that I've been thinking about.
+
+First classes of Spanish are behind me. Nice stuff. I'm placed in the beginner B group, but I'm sure I'll be promoted in a few days :)
+
+And the price level! This is one of the cheapest places I've been to. Prices so far: beer $12, bus $2-4, pastries from bakery ~$15, bottle of juice from store $6 (prices in pesos, not dollars. 1â‚¬ ~= $19).
+
+México greeted me with a nice hail shower (el granizo). I'm sure the taxi car has some permanent marks of it.";;"0"
+"252";"812";"text/markdown";"Need to write these down somewhere... random notes and experiences from the past days:
+
+ * saw a neongreen headed punk dude with a face painted in white riging a unicycle in zona rosa (""downtown"") pie a random gigolo bloke. everyone thought it was hilarious except the gigolo (who did not catch the punk). if in downtown D.F. and you see a guy riding a unicycle and carrying a pie, procede with caution..
+
+ * finnish phones do not work here directamente. i guess there are no cooperation plans with the networks. even after you buy a ''telcel'' chip (i.e. SIM, prepaid) you'll need to ""register"" your phone. for that you need your new number and identification (copy of passport was enough in my case). only one place does this, and that is in Paseo de la Reforma #222. ";;"0"
+"253";"813";"text/markdown";"Took a turibus to see the city, got a few museums on my todo-list, ate in an expensive restaurant (was 12e with a drink), learned more spanish, started coding with clutter to do a project of sorts, etc.";;"0"
+"254";"813";"text/markdown";"just bought a movie ticket for a movie I don't know in english and can't remember the spanish name anymore :). It'll be spoken in english with spanish subtitles, so it won't be that stressful. Was $49 - expensive for locals, 1/3 the price in Finland (which is also expensive for locals).
+
+Also bough a cafe mocha-frappe-ice-with-cream-on-the-top-""coffee"". Was $48...";;"1"
+"255";"813";"text/markdown";"the movie was ""persecución inminente"" (crossing over) and i'd give it an eight out of ten (i.e quite good). the theaters here don't have marked seats so you can just pick one. in my five'o'clock show there were about five people, so there's plenty of room..
+
+last night was my first tacos al pastor -experience. served as a nice, more light replacement for ""kännipitsa"" after a night out with the frida compañeros. now suffering the aftereffects of a small hangover combined with the ~2400m altitude.";;"2"
+"256";"814";"text/markdown";"After around three weeks here, I feel confident to say that all the food I've had in Finland under the adjective ""Mexican"" is a lie. I knew it wasn't correct, but had no idea it would be this far off..
+
+First I want to introduce the most important food for me so far: *tacos*. Especially *Tacos al pastor*, which could somehow be described as a delicious kebab (real - Turkish, not Finnish) meets Mexican spices and other ingredients, such as Tortillas. Normally you savour them with a selection of different salsas, lime, etc.	";;"0"
+"259";"814";"image/jpeg";"38b7c83afe3c094ce60362a83b3309fa.jpg";"kassi-image-table-center#Tacos al Pastor with a selection of salsas and lime";"2"
+"258";"814";"text/markdown";"Then a few quick fixes:
+ 
+ - the tortillas we have in Finland (and presumably the rest of the Western World) are *arab tortillas* Locals here are not as big, but there are arab versions available if you want (this also explains why they are common in the east).
+ - fajitas are a joke.. original meaning here is the pieces of meat that don't get used. Not a food here.
+ - burritos are not Mexican. Invented in the U.S. (perhaps by Mexican immigrates).
+ - quesadillas do exist. They are tortillas filled with cheese and other ingredients.
+ - nachos also exits, but I haven't yet encountered nacho plates that they serve in ""Mexican"" restaurants outside MX.
+
+Of course México is a huge country (compare to central Europe) and I haven't been outside D.F. yet. I might have more complaining to do once I've visited other places as well :)		";;"2"
+"260";"815";"text/markdown";"I'm starting to feel old. Not physically, but mentally. Maybe it's the fact that I'm probably among the oldes alumnos in the school. Anyway wednesday was my birthday and I got cake! Actually two. The first was bought by my nice spanish teacher, who also made the class sing mañanitas for me (""happy birthday""-type singsongs). The problem was that we couldn't finish it during class and I had to carry it around the uni. Fortunately the people at the international office accepted it as a donation. The second cake came from my mexican family mom here. Also very tasty.
+
+Yesterday, after a visit to [Teotihuacan](http://en.wikipedia.org/wiki/Teotihuacan), we went to [Condesa](http://en.wikipedia.org/wiki/Condesa) to celebrate. Was fun, but ate too many tacos.";;"0"
+"261";"815";"image/jpeg";"39c2e03a698ba8697347f2f8cffa3e23.jpg";"kassi-image-table-center#My First 27-year Birthday Cake";"1"
+"262";"816";"text/markdown";"School started two weeks ago. Took way too many courses about Mexican history, political situation, art, etc.. and one photography course from Diseño Gráfico. With all the web-stuff and artsy-mlab-stuff I'm really keeping myself busy. I guess I'll just flunk a few of the courses since I really don't need the credits.
+
+Yesterday I was walking around my hood Colinas del Sur and noticed how here grey can be counted as a color! It really stands out among the violet, pink and green houses! Itä-Pasila would be a truly unique barrio here.
+
+Next week: salsa lessons + hiking up a mountain";;"0"
+"263";"817";"text/markdown";"Did my first [Openframeworks](http://www.openframeworks.cc) sketch to show something during a 20min speech in Spanish that I gave about Medialab and TaiK in general. Took me around one day to make it and it was fun. Performance is much better than with processing (have done a similar thing w/ it too) and coding in C++ isn't such a big pain.	";;"0"
+"264";"817";"text/markdown";"I've also started working more and more on WELP - the Wellbeing Profile service that is based on the Koulun hyvinvointiprofiili -concept we built years ago. We're currently looking for funding, but the current lack of it won't stop the development process..
+
+Regarding México, I've taken salsa clases (just came back from one), continued other studies (art, history, politics and literature of Mexico ,and fotography). Today I'm off to a rock concert and next week is the 'puente' (=bridge=free days from school) due to the Méxican día de la independencia. We're going to Oaxaca. Can't wait!";;"2"
+"265";"817";"image/png";"18f353b3525f3c7eec85c35af8b7a9d9.png";"kassi-image-table-center#calmate";"1"
+"266";"818";"text/markdown";"El puente means bridge and the longer holiday we got after Independence day (15.9). A group of us set out to discover Oaxaca (indigenous name, pronounced something like OA-ha-ca, kinda like México is ME-hi-co). Oaxaca is a state to the south of Mexico, with a capital city of the same name. It's said to be one of the most beautiful cities in here, and not without reason. Filled with colonial beautiful buildings and lacking in ugly skyscrapers, it's one of the UNESCO world heritage sites.";;"0"
+"267";"818";"text/markdown";"We also visited [Monte Albán](http://en.wikipedia.org/wiki/Monte_Alb%C3%A1n) one of the first large urban settlements in the Americas (dating back to 500BC according to WP, our guide talked about 1500BC..). The place is very impressive. Much more than its contemporary Teotihuacan (although it's darn impressive too). I recommend hiring a guide. Ours charged us only 300 pesos for two hours of interesting tales and history while walking around the site (we ended up paying quite a nice tip).	
+
+I took a panorama from Monte Albán. See it [here](http://lauri.sokkelo.net/files/monte_alban_full.jpg)	";;"2"
+"268";"818";"text/markdown";"Puerto Escondido (""the hidden port"") was our last destination. We took a minibus through a very, very, very curvy mountain road (The Alps are nothing compared to this) and landed in around 6 hours to the coast. Puerto Escondido is a relative small and quiet port with loads of white-sand beaches and possibilities to surf, go see turtles, etc.
+
+After a few days of surfing and relaxing on the playas I returned to D.F. with an overnight bus (~750pesos/first class).";;"3"
+"269";"818";"image/jpeg";"282f75599f500bd8afac37565ba09b2f.jpg";"kassi-image-table-center#Puerto Escondido very early in the morning";"4"
+"270";"818";"image/jpeg";"c82b3898302ec649186679420f758b32.jpg";"kassi-image-table-center#A normal street view in downtown Oaxaca";"1"
+"271";"819";"text/markdown";"Just a quick note on what I've been up to since the past weeks.
+
+ - Bought a plane ticket to San Francisco to visit Mikko in Santa Clara. This will unfortunately mean I'll miss Day of the Dead (a BIG minus), but at least I'll have a reason to return to México one day
+
+ - Climbed a mountain. Personal best is now 4660m. Incredible headache, sunburns and other pains followed, but it was worth it. See pics below.
+
+ - Visited Oaxaca again. This time with the photography class. Saw some of the same places again, but also a few new ones, like the tree of Tule, which was quite amazing.";;"0"
+"272";"819";"image/jpeg";"d06b5c961f63b456415e67ef6167f6e4.jpg";"kassi-image-table-center#At the top. 4660m. Not feeling the headache yet..";"1"
+"273";"819";"image/jpeg";"39ff3ea09a181a2845ea46e99e3ca266.jpg";"kassi-image-table-center#The leader of the excursion giving us instructions. Max following beside. Below the Lagoon of the Sun (volcanic crater).";"2"
+"274";"819";"image/jpeg";"f98fe6f96ab24c13563bf10804948cc5.jpg";"kassi-image-table-center#The amazing 2000 year old tree of Tule";"3"
+"275";"820";"text/markdown";"A week spent in the U.S has been very relaxing. Weekend started in San Francisco from where we did excursions around the area with Mikko's BMW. On Sunday we arrived to the Silicon Valley and I've been hanging out here while Mikko goes to work. Every day a bit of swimming in the community pool, some work on projects and school presentations, etc.. Very, very relaxing.. could do this for weeks.
+
+SF is a great city. I could envision myself living there. Not so much here in Silicon Valley. Services are great but there's no culture, no town center, no plaza, not that many bars, i.e. not much life. You need a car for everything. There's a train that connects some parts, but it's mostly a ghost train as nobody is using it.
+
+Tomorrow we'll head out to Napa/Sonoma valley to taste a bit of wine. On Sunday I'll have to return to the developing world. Last month of lectures before the big trip..
+
+Hmm.. kinda feel like grabbing a beer now after lunch.. why not.";;"0"
+"276";"820";"image/jpeg";"e6a3e36a7590d00175b96a92a9b5a0e2.jpg";"kassi-image-table-center#The Golden Gate bridge viewed from the Bank of America building";"1"
+"277";"821";"text/markdown";"... I still don't envy people staying back in Finland :). During late nights and early mornings it can get down to 10c or even below, but most days are still sunny. This also makes me appreciate the sun more.. that's why I'm writing this on the roof of our house!
+
+Need to get back to the politics study on Maras..	";;"0"
+"278";"821";"image/jpeg";"48e6f3f07974afa412d18f1f86267a84.jpg";"kassi-image-table-center#Hahaa! It's sunny in November!";"1"
+"279";"822";"text/markdown";"Last weekend we took a quick trip to the second (or third?) largest city in Mexico: Guadalajara. Very nice. Much easier for the passing tourist than D.F. as the city centre area is walkable and easily navigable (although my impeccable sense of direction led us astray once). Missed the Orozco murals which pains me. Perhaps I'll return one day.
+
+Also we took a day tour to Tequila - an area famous for guess what.. it was wild (hostel provided the tour, so only youngsters), fun and educative! We visited three distilleries, the village of Tequila, fields of Blue Agave and got to experience and learn the process first hand. Of course we also tasted a Lot of different tequila - all 100% agave of course. Even the silver variety beats pretty much anything I've found in Finland.. not to mention the añejo or even extra añejo, of which I have one bottle awaiting my upcoming guests.
+
+That was a week ago and I'm still feeling the consequences. This week has been spent mostly indoors. Working on stuff for uni. All the deadlines are now approaching fast.. fortunately I'm almost done with all the work now. Should perhaps focus on more important things like WELP..";;"0"
+"280";"822";"image/jpeg";"59b0556d4ad8034542d26b902f5c55cc.jpg";"kassi-image-table-center#Pueblo Mágico - indeed..";"1"
+"281";"823";"text/markdown";"School is out so I have a bit more time on my hands now. I've been slacking in my own field as my time has been consumed by random mexican studies and other stuff. To make up for that I started experimenting with Equalizer, and today I managed to get a simple OpenGL-thing rolling.
+
+See the video. It's dead simple and currently running on my Asus eee 1000HE (hence the slowness!), but it could easily be running on 4 separate computers connected to projectors (for instance). ";;"0"
+"283";"823";"text/youtube-id";"tsKy6JpHeeU";;"1"
+"284";"824";"text/markdown";"Returned yesterday from a tour on the Mexican south-southwest coast. Went through Zipolite-Mazunte-Puerto Escondido-Acapulco-Zihuatanejo in a bit under 2 weeks. Mazunte was the best, Acapulco the worst. No surprise there. 
+
+During the 9 hour busride the environment changed from the continuous 30 degree beach to plus 15 or so here in DF. And it's great! I can wear a sweater! And I'm not sweating all the time!
+
+Tomorrow I'm out of Mexico... off to South America. Sad to leave the good ol MX behind, but on the other hand it'll be nice to find entirely new places.";;"0"
+"285";"825";"text/markdown";"Last three weeks were spent in Peru. Landed in Lima, continued to Huacachina to live on a desert oasis (sandboarding, dune buggy riding, etc.), proceeded to Cusco, where we spent 13 nights due to a need to wait for a trek from our chosen agency Lamapath. 
+
+Aino got a combination of different illnesses including salmonella which forced her to drop the trip, while I participated (no refunds, no other good dates).
+
+When we finally got out of Cusco we headed out to lake Titicaca and visited the floating islands, stayed in a local family on an island, saw Puno and crossed the border to Copacabana. On the bus ride to the border we remembered that we left our money belts in the Puno hostel.. thankfully after some arranging with our bus company rep, we evaded the need to return to Peru and got the stuff via the company. The hostel didn't make it easy though as their phone was occupied 24/7, hence I do not recommend Qorikancha in Puno.
+
+Now we're in La Paz and finally in front of a computer that has something better than internet explorer (which won't work with this blog). From here to the Jungle I guess.";;"0"
+"286";"825";"text/markdown";"And as an extra note, we missed the current crisis situation in Machu Picchu by a few days. The river did look quite scary already at that time. Aguas Calientes is a nice little place, but I wouldn't want to be stuck there...";;"2"
+"287";"825";"image/jpeg";"1ca3b4d37b2f42dadb6a7923c54bff17.jpg";"kassi-image-table-center#Rain approaching on Isla Amantani on Lake Titicaca";"1"
+"288";"826";"text/markdown";"A few days ago we passed the border from Bolivia to Chile. The change is quite remarkable: from one of the poorest to the most developed nation. Prices went up a lot and due to the high season here we're suffering difficulties finding accomodation.
+
+Still some nice places here, like San Pedro de Atacama in the desert and La Serena where we are right now. Thankfully Argentina should be cheaper again :)";;"0"
+"289";"827";"text/markdown";"So the last post was from Chile. Weeks have passed since and we've seen more and more of Chile (avoiding the devastating earthquake by less than a day), and now we're in Buenos Aires. Argentina has been very nice. Iguazu falls were incredible although very touristy, as such places tend to be.
+
+Just a few days left now. Around 9 months since I left Finland. Wonder if I'll suffer the biggest culture shock once I land in Vantaa.. not really looking forward to it much: it's >25 degrees here, yesterday rained (and they cancelled the [Superclásico](http://en.wikipedia.org/wiki/Supercl%C3%A1sico)), but most days are sunny.
+
+Buenos Aires is really nice. Almost as nice as DF in México (I'm biased of course). Having our own apartment in Palermo makes the experience even better and not really that much more expensive since we're three now that Eeva has joined us.	";;"0"
+"290";"828";"text/markdown";"The need to code ""something completely different"" made me do **Background Shuffler** - a beautiful background changer for Gnome. I wanted to extend the [UNIX philosophy](http://www.faqs.org/docs/artu/ch01s06.html) to desktop applications so Background Shuffler only changes your background. It does not make coffee.
+
+So I spent a few days hacking and with the help of great tools and libraries like [Quickly](https://wiki.ubuntu.com/Quickly) and [appindicator](https://launchpad.net/ubuntu/lucid/+package/python-appindicator) I managed to build this nifty little program that I'm using all the time now.
+
+Features:
+
+* handle all through the **indicator icon**. No mysterious script running in the background, retain complete control over your desktop at all times
+* make the backgrounds change as quickly or slowly as you like
+* integrates with **F-Spot**, so search for certain tags or ratings
+* optionally specify a **folder** that will be searched with photos
+
+But I guess screenshots explain a thousand words.					";;"0"
+"291";"828";"image/png";"f7d877d2baed06ed122d7928b9e4a2d7.png";"kassi-image-table-center#It runs in your indicator area! A more ubuntu-dark-stylish icon should added at some point.";"1"
+"292";"828";"image/png";"7ce5a67d4e0bc19593099de1aa41434c.png";"kassi-image-table-center#Preferences sum up the core of the application";"2"
+"293";"828";"text/markdown";"You'll probably be best running Ubuntu Lucid (10.04). To install the app just download the deb or add the ppa to your sources at: [https://edge.launchpad.net/~luopio/+archive/ppa](https://edge.launchpad.net/~luopio/+archive/ppa)
+
+Bugs, suggestions and **patches** welcome! Email at lauri(dot)kainulainen(at) gmail.com			";;"3"
+"294";"829";"text/markdown";"I decided to redo my site ages ago but as design processes go, redesigning your own site is probably one of the most painful ones. I went from several layouts finally to this one (as usual the last one is the simplest) and I'm still not entirely happy.
+
+I wanted to share all the fun projects I've been doing here at Medialab and give them more emphasis. At the same time I wanted to go to a one page layout to better support touchscreens in tablets and other mobile devices (and to stand out from the crowd a bit ;) )
+
+I also had some _processing.js_ animations working in the background, but disabled them for now as the html-canvas element still seems to be quite slow.
+
+Maybe I'll still clear out some visual noise and include some simple graphics, but for now I'll leave it as it is.		";;"0"
+"295";"830";"text/markdown";"Finally found the effort to move this site to the web 1.5 era by implementing an atom feed generator. Also threw in Disqus commenting to be all social and hip and stuff.
+
+Projects got a new addition with Jorma the Skeleton. A small, fun project we did with Niko for Levykauppa Äx. And believe me - this is just the beginning for silly endeavours..";;"0"
+"296";"831";"text/markdown";"Why on earth would you want to do that? My reason was that I needed to draw SVG in [Processing.js](http://www.processingjs.org). So I took a simple flat SVG with filled polygons and converted it to JSON, which then is drawn by PJS. Here's the Python JSON extraction snippet.";;"0"
+"297";"831";"text/markdown";"<pre><code>#!/usr/bin/python
+''' 
+    Convert a simple svg to a bunch of javascript
+    arrays that can be drawn in code
+    stdout get the json
+    stderr print some information helpful in the js code
+    
+    @author Lauri Kainulainen - lauri.sokkelo.net
+'''
+
+import sys
+from xml.dom import minidom
+import simplejson
+
+if len(sys.argv) < 2:
+    print ""usage:"", __file__, ""SVG_FILE""
+    sys.exit(1)
+d = minidom.parse(sys.argv[1])
+
+points = []
+minx, miny = 10000, 10000
+maxx, maxy = 0, 0
+amount_of_polys = 0
+for c in d.childNodes[1].childNodes:
+    if c.nodeName != '#text' and c.tagName == 'polygon':
+        coords = c.attributes.get('points').value.split("" "")
+        polygon_data = {}
+        polygon_points = []
+        for coord in coords:
+            x, y = coord.split(',')
+            x, y = float(x), float(y)
+            minx = min(minx, x)
+            miny = min(miny, y)
+            maxx = max(maxx, x)
+            maxy = max(maxy, y)
+            polygon_points.append((x, y))
+        polygon_data['points'] = polygon_points
+        if c.attributes.get('fill'):
+            val = c.attributes.get('fill').value
+            if val.startswith('#'):
+                r, g, b = int(val[1:3], 16), int(val[3:5], 16), int(val[5:], 16)
+                polygon_data['fill'] = (r, g, b)
+            else:
+                polygon_data['fill'] = c.attributes.get('fill').value
+        amount_of_polys += 1
+        points.append(polygon_data)
+
+print simplejson.dumps(points, indent=2)
+sys.stderr.write('\n ~# Wicked SVG Statz: #~\n')
+sys.stderr.write('  min X,Y: %s, %s\n' % (minx, miny))
+sys.stderr.write('  max X,Y: %s, %s\n' % (maxx, maxy))
+sys.stderr.write('  polygons: %s\n' % (amount_of_polys))
+sys.stderr.write('\n')
+</code></pre>";;"1"
+"298";"831";"text/markdown";"Then you probably want it on the screen. We used the following processingjs snippet on [Helsinki New Media Locomotive site](http://locomotivehelsinki.org) for testing:";;"2"
+"299";"831";"text/markdown";"<pre><code>
+void setup()
+{
+    size(300,300);
+    background(255);
+    noLoop();
+    strokeWeight(0.5);
+}
+
+void draw(){  
+    var data = YOUR_OWN_DATA_ELEMENT; // make this point to your JSON structure
+    for(int i = 0; i < data.length; i++) {
+        var pd = data[i];
+        fill(pd.fill[0], pd.fill[1], pd.fill[2]);
+        beginShape();
+        for(int ii = 0; ii < data[i].points.length; ii++) {
+            var point = pd.points[ii];
+            vertex(point[0], point[1]);
+        }
+        endShape(CLOSE);
+    }
+}
+</code></pre>";;"3"
+"300";"832";"text/markdown";"Recently it became obvious that Intgrlab, the software company we've been building since early spring, doesn't have any development work in the pipeline. Hence there is no work for me - the guy who hasn't bothered with the consulting side yet.
+
+So I decided to start looking for new stuff! There's loads of interesting opportunities out there. For this I've finally sat down and updated this site (less clutter, contact section) to use as a portfolio and updated my CV to match my current skills. Check 'em out! Also if you happen to know anybody who needs a hardcore dev / designer.. drop me a line!";;"0"
+"301";"833";"text/markdown";"Finally I've had the time to update the site. Since last time there's the award winning Angry Birds site as well as Dotted Landscape - my thesis work that has kept me busy for a year and a half.
+
+Also some notable projects we've cooked up with the Reuna crew are here now. Archive Flow and History flow are worth checking out. Hopefully I'll get a chance to do more of these in the future.
+
+Also I've been playing around with Beagle bone - a hacker friendly SOC Linux computer. Here's an image of a latest few hour hack based on my [Python Thermal Printer library](https://github.com/luopio/py-thermal-printer/). It's a Ghetto polaroid camera. Flip the switch and it'll take a quick photo and print it out with the thermal printer.	";;"0"
+"303";"833";"image/jpeg";"20c89204eb65e84bf0c5186aa8e7db25.jpg";"kassi-image-table-center#Ghetto Polaroid!";"1"

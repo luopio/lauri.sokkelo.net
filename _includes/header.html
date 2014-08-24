@@ -1,0 +1,32 @@
+<header {% if page.cover_image %}class=has-cover-image{% endif %}>
+
+  {% if page.cover_image %}
+    <div id="cover-image" style="background-image: url({{ page.cover_image }})">
+    </div>
+  {% endif %}
+
+  <hgroup>
+        <h1> 
+            <a href="/">
+              Lauri <br />
+              Kainulainen <br />
+              <span>M.Sc, MA</span>
+            </a>
+        </h1>
+        <p>
+            design, <br />
+            code, <br />
+            experience, <br />
+            art, <br />
+            electronics, <br />
+            interaction
+        </p>
+    </hgroup>
+</header>
+<!--
+  {% for page in site.pages %}
+    {% if page.title %}
+    <a class="page-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
+    {% endif %}
+  {% endfor %}
+  --> 

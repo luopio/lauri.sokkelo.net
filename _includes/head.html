@@ -1,0 +1,18 @@
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="author" content="Lauri Kainulainen">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" >
+    <link rel="shortcut icon" href="http://lauri.sokkelo.net/favicon.ico" />
+    <link rel="icon" type="image/vnd.microsoft.icon" href="http://lauri.sokkelo.net/favicon.ico" />
+    <link rel="icon" type="image/png" href="http://lauri.sokkelo.net/favicon.png" />
+    <meta name="author" content="Lauri Kainulainen">
+    <meta name="keywords" content="Lauri Kainulainen, software, design, user experience, blog, interaction, visuals, interactive art">
+
+    <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
+    <meta name="description" content="{{ site.description }}">
+
+    <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
+    <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+</head>

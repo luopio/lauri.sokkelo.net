@@ -1,0 +1,13 @@
+---
+layout: post
+title:  "Updated... finally"
+date:   2012-08-27 20:28:54 
+categories: release 
+---
+Finally I've had the time to update the site. Since last time there's the award winning Angry Birds site as well as Dotted Landscape - my thesis work that has kept me busy for a year and a half.
+
+Also some notable projects we've cooked up with the Reuna crew are here now. Archive Flow and History flow are worth checking out. Hopefully I'll get a chance to do more of these in the future.
+
+Also I've been playing around with Beagle bone - a hacker friendly SOC Linux computer. Here's an image of a latest few hour hack based on my [Python Thermal Printer library](https://github.com/luopio/py-thermal-printer/). It's a Ghetto polaroid camera. Flip the switch and it'll take a quick photo and print it out with the thermal printer.	
+
+<img src=20c89204eb65e84bf0c5186aa8e7db25.jpg />

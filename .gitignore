@@ -1,2 +1,6 @@
 _site
 luopio.github.io.iml
+.DS_Store
+.asset_pipeline/
+.idea/
+.sass-cache/

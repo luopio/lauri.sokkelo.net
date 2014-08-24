@@ -15,6 +15,7 @@ Puerto Escondido ("the hidden port") was our last destination. We took a minibus
 
 After a few days of surfing and relaxing on the playas I returned to D.F. with an overnight bus (~750pesos/first class).
 
-![](/images/kassi/282f75599f500bd8afac37565ba09b2f.jpg)
 
-![](/images/kassi/c82b3898302ec649186679420f758b32.jpg)
+{% picture /images/kassi/282f75599f500bd8afac37565ba09b2f.jpg alt="seaside" %}
+
+{% picture /images/kassi/c82b3898302ec649186679420f758b32.jpg alt="seaside" %}

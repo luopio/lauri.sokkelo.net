@@ -6,3 +6,4 @@ gem 'japr'
 gem 'yui-compressor'
 
 gem 'sinatra'
+gem 'therubyracer'

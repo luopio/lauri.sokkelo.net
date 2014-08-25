@@ -66,6 +66,7 @@ GEM
     toml (0.1.1)
       parslet (~> 1.5.0)
     yajl-ruby (1.1.0)
+    yui-compressor (0.12.0)
 
 PLATFORMS
   ruby
@@ -74,3 +75,4 @@ DEPENDENCIES
   japr
   jekyll
   mini_magick
+  yui-compressor

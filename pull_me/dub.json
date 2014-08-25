@@ -1,0 +1,10 @@
+{
+	"name": "pull_me",
+	"description": "A simple shell script running http listener",
+	"copyright": "Copyright © 2014, lauri",
+	"authors": ["lauri"],
+	"dependencies": {
+		"vibe-d": ">=0.7.17"
+	},
+	"versions": ["VibeDefaultMain"]
+}

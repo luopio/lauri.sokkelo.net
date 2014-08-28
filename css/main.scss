@@ -84,6 +84,7 @@ section {
 
 header {
   padding-bottom: 10px;
+  background: #eee;
   hgroup {
     overflow: hidden;
     z-index: 2;
@@ -91,7 +92,7 @@ header {
     h1 {
       float: left;
       width: 40%;
-      margin: 4px 0;
+      margin: 0;
 
       a,
       a:hover,
@@ -133,7 +134,7 @@ header {
 section#projects-section {
 
   overflow: hidden;
-  margin: 0 auto;
+  margin: 15px auto 0;
 
   > div {
     margin: 0 auto;
@@ -481,21 +482,20 @@ footer {
   transition-property: left, right, top;
 }
 
+@media (max-width: 600px) {
+  article.blog-post > time {
+    float: none;
+    width: 100%;
+    margin: 0;
+    border-top: 1px solid #eee;
+    padding: 8px 0 0 0;
+  }
+}
+
+
+
 /* wider screens */
 @media only screen and (min-width: 950px) {
-
-  section#projects-section {
-
-    article.expanded {
-      figure, .slideshow {
-        width: 400px;
-        text-align: center;
-        figcaption {
-          padding: 8px 24px;
-        }
-      }
-    }
-  }
 
 }
 

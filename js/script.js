@@ -28,6 +28,12 @@ var projects = {
         if(document.location.hash) {
             $(document.location.hash).click();
         }
+
+        var debouncedResize = debounce(function() {
+            projects.$containerElement.masonry('reload');
+        }, 2000);
+        $(window).resize(debouncedResize);
+
     },
 
     /* When clicked - expand to show the information and bigger images */
@@ -56,7 +62,6 @@ var projects = {
                     width : fw + 'px'
                 }, 500, function() {
                     // scroll to the element
-                    console.log('now we should scroll!', $article.offset().top - 2)
                     setTimeout(function() {
                         $("html:not(:animated), body:not(:animated)")
                             .animate({ scrollTop : $article.offset().top - 2 }, 300);

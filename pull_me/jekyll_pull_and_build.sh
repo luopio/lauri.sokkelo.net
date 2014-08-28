@@ -6,4 +6,3 @@ GIT_ROOT=/var/www/lauri
 cd $GIT_ROOT && git pull
 cd $GIT_ROOT && bundle install
 cd $GIT_ROOT && jekyll build
-

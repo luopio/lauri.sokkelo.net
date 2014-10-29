@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: old_post
 title:  "Electronics WS outcome"
 date:   2008-11-17 12:57:39 
 categories: studies graphics release 

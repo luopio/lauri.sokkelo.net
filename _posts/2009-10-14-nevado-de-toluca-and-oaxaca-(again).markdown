@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: old_post
 title:  "Nevado de Toluca and Oaxaca (again)"
 date:   2009-10-14 19:29:01 
 categories: méxico travel

@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: old_post
 title:  "Gstreamer Live Cinema and VJing?"
 date:   2009-01-13 10:36:34 
 categories: graphics studies 

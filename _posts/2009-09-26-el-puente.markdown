@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: old_post
 title:  "El Puente"
 date:   2009-09-26 20:14:30 
 categories: méxico travel 
@@ -16,6 +16,6 @@ Puerto Escondido ("the hidden port") was our last destination. We took a minibus
 After a few days of surfing and relaxing on the playas I returned to D.F. with an overnight bus (~750pesos/first class).
 
 
-{% picture /images/kassi/282f75599f500bd8afac37565ba09b2f.jpg alt="seaside" %}
+{% picture kassi/282f75599f500bd8afac37565ba09b2f.jpg alt="seaside" %}
 
-{% picture /images/kassi/c82b3898302ec649186679420f758b32.jpg alt="seaside" %}
+{% picture kassi/c82b3898302ec649186679420f758b32.jpg alt="seaside" %}

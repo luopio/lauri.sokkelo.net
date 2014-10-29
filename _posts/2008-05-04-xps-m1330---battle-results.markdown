@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: old_post
 title:  "XPS M1330 - Battle Results"
 date:   2008-05-04 21:28:16 
 categories: xps linux howto 

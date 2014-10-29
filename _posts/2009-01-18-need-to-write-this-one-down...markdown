@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: old_post
 title:  "Need to write this one down.."
 date:   2009-01-18 12:18:40 
 categories: humour general 

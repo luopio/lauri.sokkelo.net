@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: old_post
 title:  "Got myself a fit-pc!"
 date:   2008-10-14 08:59:34 
 categories: linux general coding 

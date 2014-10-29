@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: old_post
 title:  "Hong Kong"
 date:   2008-03-13 06:58:57 
 categories: asia travel 

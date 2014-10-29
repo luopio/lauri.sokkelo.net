@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: old_post
 title:  "PENALTI pays"
 date:   2009-03-19 12:43:23 
 categories: coding release 

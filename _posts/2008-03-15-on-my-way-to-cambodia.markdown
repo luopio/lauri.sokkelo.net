@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: old_post
 title:  "On My Way to Cambodia"
 date:   2008-03-15 06:49:57 
 categories: travel asia 

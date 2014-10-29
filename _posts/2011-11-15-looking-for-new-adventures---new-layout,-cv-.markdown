@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: old_post
 title:  "Looking for new adventures - new layout, cv "
 date:   2011-11-15 11:55:26 
 categories: general 

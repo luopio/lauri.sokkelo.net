@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: old_post
 title:  "Late Birthday Update"
 date:   2009-08-16 20:44:25 
 categories: studies méxico 

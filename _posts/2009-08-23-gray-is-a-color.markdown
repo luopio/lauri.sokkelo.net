@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: old_post
 title:  "Gray is a Color"
 date:   2009-08-23 18:52:53 
 categories: méxico studies 

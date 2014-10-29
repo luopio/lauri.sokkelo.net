@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: old_post
 title:  "Arrived in México"
 date:   2009-07-20 21:45:22 
 categories: méxico studies 

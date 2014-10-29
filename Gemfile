@@ -7,3 +7,5 @@ gem 'yui-compressor'
 
 gem 'sinatra'
 gem 'therubyracer'
+
+gem 'exifr'

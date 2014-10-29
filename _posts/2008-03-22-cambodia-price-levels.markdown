@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: old_post
 title:  "Cambodia Price Levels"
 date:   2008-03-22 12:57:33 
 categories: asia travel 

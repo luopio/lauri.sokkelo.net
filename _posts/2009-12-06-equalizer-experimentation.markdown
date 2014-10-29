@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: old_post
 title:  "Equalizer experimentation"
 date:   2009-12-06 01:18:29 
 categories: graphics studies coding 

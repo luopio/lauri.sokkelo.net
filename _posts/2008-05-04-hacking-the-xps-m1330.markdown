@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: old_post
 title:  "Hacking the XPS M1330"
 date:   2008-05-04 17:36:18 
 categories: howto xps linux 

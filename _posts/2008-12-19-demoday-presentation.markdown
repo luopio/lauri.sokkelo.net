@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: old_post
 title:  "Demoday Presentation"
 date:   2008-12-19 18:32:12 
 categories: studies graphics coding 

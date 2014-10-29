@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: old_post
 title:  "Arduino meets N800"
 date:   2009-01-18 11:53:06 
 categories: coding linux arduino 

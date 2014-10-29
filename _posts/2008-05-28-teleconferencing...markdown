@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: old_post
 title:  "Teleconferencing.."
 date:   2008-05-28 10:15:41 
 categories: random 

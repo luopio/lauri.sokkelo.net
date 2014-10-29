@@ -5,16 +5,9 @@ layout: default
 {% include projects.html %}
 
 <section id="blog-section" class="listing">
-  <!--<div class="blog-menu">-->
-  <!--<div class="tags" style="background: red;">-->
-  <!--{% for category in site.categories %}-->
-  <!--<span>{{ category | first }}</span>-->
-  <!--{% endfor %}-->
-  <!--</div>-->
-  <!--</div>-->
 
   {% for post in site.posts %}
-  <article class=blog-post>
+  <article>
     {% if post.cover_image %}
       <div class="cover-image-slice" style="background-image: url({{ post.cover_image }})"></div>
     {% endif %}
@@ -33,9 +26,10 @@ layout: default
         <span class="{{ cat|first_letter }}">{{ cat }}</span>
         {% endfor %}
       </div>
-      <div class="body">
-        {{ post.excerpt }}
-      </div>
+
+      <!--<div class="body">-->
+        <!--{{ post.excerpt }}-->
+      <!--</div>-->
     </div>
   </article>
   {% endfor %}

@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: old_post
 title:  "Traveling in south South America"
 date:   2010-01-28 15:17:01 
 categories: travel 

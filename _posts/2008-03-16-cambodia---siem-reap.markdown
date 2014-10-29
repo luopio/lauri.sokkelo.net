@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: old_post
 title:  "Cambodia - Siem Reap"
 date:   2008-03-16 07:02:52 
 categories: travel asia 

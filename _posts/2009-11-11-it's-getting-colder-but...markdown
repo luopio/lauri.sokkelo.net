@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: old_post
 title:  "It's getting colder but.."
 date:   2009-11-11 23:37:55 
 categories: méxico 

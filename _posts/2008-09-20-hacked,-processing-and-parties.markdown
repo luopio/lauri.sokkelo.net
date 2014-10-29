@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: old_post
 title:  "Hacked, Processing and Parties"
 date:   2008-09-20 14:52:29 
 categories: studies coding graphics release 

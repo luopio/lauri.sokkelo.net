@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: old_post
 title:  "From Bolivia to Chile"
 date:   2010-02-16 14:01:15 
 categories: travel 

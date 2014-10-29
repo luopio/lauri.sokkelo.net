@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: old_post
 title:  "Updates from México [updated x 2]"
 date:   2009-08-01 19:02:42 
 categories: méxico studies 

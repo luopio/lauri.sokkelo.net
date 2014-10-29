@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: old_post
 title:  "California, Gringolandia, again"
 date:   2009-11-05 22:10:44 
 categories: travel

@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: old_post
 title:  "Coastal Tour"
 date:   2010-01-03 21:35:05 
 categories: méxico travel 

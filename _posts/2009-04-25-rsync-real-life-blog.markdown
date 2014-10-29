@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: old_post
 title:  "rsync real-life blog"
 date:   2009-04-25 20:47:20 
 categories: general travel studies 

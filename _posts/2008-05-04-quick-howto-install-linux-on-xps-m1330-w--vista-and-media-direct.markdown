@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: old_post
 title:  "Quick HOWTO Install Linux on XPS M1330 w/ Vista and Media Direct"
 date:   2008-05-04 16:11:41 
 categories: howto xps linux 

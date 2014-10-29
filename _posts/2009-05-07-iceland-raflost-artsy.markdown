@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: old_post
 title:  "iceland/raflost/artsy"
 date:   2009-05-07 19:03:08 
 categories: studies travel 

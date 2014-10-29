@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: old_post
 title:  "I got my new XPS M1330"
 date:   2008-05-03 09:20:37 
 categories: random linux 

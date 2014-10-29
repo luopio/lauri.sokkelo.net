@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: old_post
 title:  "Atom feeds, new project and Disqus support"
 date:   2011-01-30 17:49:05 
 categories: release arduino coding 

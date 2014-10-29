@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: old_post
 title:  "Burned"
 date:   2008-03-22 12:44:53 
 categories: asia travel 

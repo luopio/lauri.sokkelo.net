@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: old_post
 title:  "Background Shuffler"
 date:   2010-06-07 07:57:52 
 categories: coding linux release 

@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: old_post
 title:  "Random Occurences"
 date:   2009-07-24 02:43:39 
 categories: méxico studies 

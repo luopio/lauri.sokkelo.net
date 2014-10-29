@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: old_post
 title:  "Art & Work"
 date:   2009-09-11 01:32:20 
 categories: graphics coding méxico 

@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: old_post
 title:  "Méxican Quisine - Setting Some Things Straight"
 date:   2009-08-11 06:07:01 
 categories: travel studies méxico 

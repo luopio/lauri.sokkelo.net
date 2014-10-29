@@ -12,7 +12,7 @@ markdown: kramdown
 exclude: [migration, pull_me]
 
 picture:
-  # source: assets/images/_fullsize
+  source: images
   output: generated
   markup: picture
   presets:
@@ -23,38 +23,39 @@ picture:
         class: full-width
         itemprop: image
       source_lrg:
-        media: "(min-width: 40em)"
-        width: 700
+        media: "(min-width: 1200px)"
+        width: 1600
       source_med:
-        media: "(min-width: 30em)"
-        width: 450
+        media: "(min-width: 900px)"
+        width: 1200
       source_default:
-        width: 350
-        height: 200
-    # Half width pictures
-    half:
-      ppi: [1, 1.5]
-      attr:
-        data-location: "{{location}}"
-        data-active: nil
-      source_lrg:
-        media: "(min-width: 40em)"
-        width: 400
-      source_med:
-        media: "(min-width: 30em)"
-        width: 250
-      source_default:
-        width: 350
-    # Self-set resolution sources. Useful if you don't want a 1:1 image size to dppx ratio.
-    gallery:
-      source_wide_hi:
-        media: "(min-width: 40em) and (min-resolution: 1.5dppx)"
-        width: 900
-        height: 600
-      source_wide:
-        media: "(min-width: 40em)"
         width: 600
-        height: 400
-      source_default:
-        width: 250
-        height: 250
+
+
+#    # Half width pictures
+#    half:
+#      ppi: [1, 1.5]
+#      attr:
+#        data-location: "{{location}}"
+#        data-active: nil
+#      source_lrg:
+#        media: "(min-width: 40em)"
+#        width: 400
+#      source_med:
+#        media: "(min-width: 30em)"
+#        width: 250
+#      source_default:
+#        width: 350
+#    # Self-set resolution sources. Useful if you don't want a 1:1 image size to dppx ratio.
+#    gallery:
+#      source_wide_hi:
+#        media: "(min-width: 40em) and (min-resolution: 1.5dppx)"
+#        width: 900
+#        height: 600
+#      source_wide:
+#        media: "(min-width: 40em)"
+#        width: 600
+#        height: 400
+#      source_default:
+#        width: 250
+#        height: 250

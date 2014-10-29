@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: old_post
 title:  "Towards the Perfect (Linux) Setup"
 date:   2008-12-19 17:57:16 
 categories: coding howto linux 

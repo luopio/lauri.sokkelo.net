@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: old_post
 title:  "Updated... finally"
 date:   2012-08-27 20:28:54 
 categories: release 

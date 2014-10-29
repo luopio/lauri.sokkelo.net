@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: old_post
 title:  "Guadalajara + Tequila"
 date:   2009-11-22 07:22:09 
 categories: méxico travel

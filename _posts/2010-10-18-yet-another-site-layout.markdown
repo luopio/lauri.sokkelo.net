@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: old_post
 title:  "Yet Another Site Layout"
 date:   2010-10-18 10:10:50 
 categories: graphics release 

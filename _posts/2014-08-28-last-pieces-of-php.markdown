@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: old_post
 title:  "Last pieces of PHP are gone"
 date:   2014-08-28 23:26:00 
 categories: release 

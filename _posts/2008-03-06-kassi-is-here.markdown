@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: old_post
 title:  "Kassi is here"
 date:   2008-03-06 08:14:56 
 categories: coding kassi 

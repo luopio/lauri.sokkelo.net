@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: old_post
 title:  "Angkor W00t"
 date:   2008-03-22 12:35:35 
 categories: asia travel 

@@ -1,0 +1,49 @@
+---
+layout: default
+---
+<article class="blog-post old-school post-page">
+
+{% if page.cover_image %}
+  <div id="cover-image" style="background-image: url({{ page.cover_image }})">
+
+  </div>
+{% endif %}
+
+<time datetime="{{ page.date | date: "%b %-d, %Y" }}">
+  {{ page.date | date: "%b %-d, %Y" }}
+  {% if page.meta %}
+    • {{ page.meta }}
+  {% endif %}
+</time>
+
+<div>
+  <h1>
+    {{ page.title }}
+  </h1>
+
+  <div class="tags">
+    {% for cat in page.categories %}
+    <span class="{{ cat|first_letter }}">{{ cat }}</span>
+    {% endfor %}
+  </div>
+
+  <div class="body">
+    {{ content }}
+  </div>
+
+</div>
+</article>
+
+<div class="related">
+{% for category_name in page.categories %}
+<h2 class="tags">
+  Other articles in
+  <span class="{{ category_name|first_letter }}">{{ category_name }}</span>
+</h2>
+<nav>
+  {% for post in site.categories[category_name] %}
+  <a href="{{ post.url }}"> &raquo; {{ post.title }}</a>
+  {% endfor %}
+</nav>
+{% endfor %}
+</div>

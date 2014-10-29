@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: old_post
 title:  "Want to convert simple SVG into JSON with Python?"
 date:   2011-02-19 17:30:52 
 categories: howto graphics coding release 

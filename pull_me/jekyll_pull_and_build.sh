@@ -1,7 +1,6 @@
 #!/bin/bash
 
-GIT_ROOT=/var/www/lauri
-# GIT_ROOT=/Users/lauri/code/luopio.github.io/
+GIT_ROOT=$1
 
 cd $GIT_ROOT && git pull
 cd $GIT_ROOT && bundle install

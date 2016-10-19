@@ -31,7 +31,7 @@ def handle_projects(project, branch, id)
       `./jekyll_pull_and_build.sh /var/www/lauri`
 
     when 'koulunhyvinvointiprofiili'
-      build_out = `./build_kh.sh #{branch} #{id} /home/lauri/builder/kh`
+      build_out = `./build_kh.sh #{branch} #{id} /home/lauri/koulunhyvinvointiprofiili`
       build_out + `./deploy_kh.sh #{branch} #{id} localhost`
 
     when 'www.montell.fi'

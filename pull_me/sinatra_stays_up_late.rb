@@ -9,9 +9,9 @@ post '/' do
   # project = params[:project]
   # branch = params[:branch]
   # id = params[:id]
-  puts "------------"
-  pp(payload)
-  puts "------------"
+  # puts "------------"
+  # pp(payload)
+  # puts "------------"
   project = payload['repository']['name']
   branch = payload['ref'].split('/').last
   id = payload['head_commit']['id']

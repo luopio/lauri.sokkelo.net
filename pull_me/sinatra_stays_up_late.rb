@@ -1,10 +1,20 @@
 require 'sinatra'
 require 'date'
+require 'json'
+require 'pp'
 
 post '/' do
-  project = params[:project]
-  branch = params[:branch]
-  id = params[:id]
+  request.body.rewind
+  payload = JSON.parse request.body.read
+  # project = params[:project]
+  # branch = params[:branch]
+  # id = params[:id]
+  puts "------------"
+  pp.pp payload
+  puts "------------"
+  project = payload['repository']['name']
+  branch = payload['head'].split('/').last
+  id = payload['head']
   puts "-/-/-/-|-\\-\\-\\- Building #{project}/#{branch}/#{id} on #{DateTime.now}"
   puts handle_projects(project, branch, id)
   puts

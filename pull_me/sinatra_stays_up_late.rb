@@ -14,8 +14,9 @@ post '/' do
   puts "------------"
   project = payload['repository']['name']
   branch = payload['ref'].split('/').last
-  id = payload['head']
-  puts "-/-/-/-|-\\-\\-\\- Building #{project}/#{branch}/#{id} on #{DateTime.now}"
+  id = payload['head_commit']['id']
+  msg = payload['head_commit']['message']
+  puts "-/-/-/-|-\\-\\-\\- Building #{project}/#{branch}/#{id} (#{msg}) on #{DateTime.now}"
   puts handle_projects(project, branch, id)
   puts
 end

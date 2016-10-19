@@ -13,7 +13,7 @@ post '/' do
   pp(payload)
   puts "------------"
   project = payload['repository']['name']
-  branch = payload['head'].split('/').last
+  branch = payload['ref'].split('/').last
   id = payload['head']
   puts "-/-/-/-|-\\-\\-\\- Building #{project}/#{branch}/#{id} on #{DateTime.now}"
   puts handle_projects(project, branch, id)

@@ -10,7 +10,7 @@ post '/' do
   # branch = params[:branch]
   # id = params[:id]
   puts "------------"
-  pp.pp payload
+  pp(payload)
   puts "------------"
   project = payload['repository']['name']
   branch = payload['head'].split('/').last
